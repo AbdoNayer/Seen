@@ -5,6 +5,6 @@
     @include positionItem(fixed, 0, initial, 0, 0, initial);
     @include flexItem(flex, center, center, row, initial);
     z-index: 99999;
-    background: $whiteColor;
+    background: $White;
   
 }
