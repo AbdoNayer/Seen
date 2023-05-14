@@ -1,0 +1,51 @@
+@use '../abstracts/mixins' as *;
+
+// Dir LTR
+
+html[dir=ltr] {
+
+    // Body App
+    body{
+        direction: ltr;
+    }
+
+    .overlay-fixed{
+        transform: translateX(-100%);  
+        left: 0;            
+    }
+
+    // Media
+    @media (max-width: 990px) {
+        // Nav
+        nav{
+            transform: translateX(-100%);  
+            left: 0;
+        }
+    }
+
+}
+
+// Dir RTL
+
+html[dir=rtl] {
+
+    // Body App
+    body{
+        direction: rtl;
+    }
+
+    .overlay-fixed{
+        transform: translateX(100%);  
+        right: 0;            
+    }
+
+    // Media
+    @media (max-width: 990px) {
+        // Nav
+        nav{
+            transform: translateX(100%);  
+            right: 0; 
+        }
+    }
+
+}
