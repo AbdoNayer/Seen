@@ -3,10 +3,17 @@
 $(window).on('load', function () {
 
     // Loading Page
-    $(".loader").fadeOut(500,function(){
-        $(".spinner").delay(1000).fadeOut(500);
+    $(".spinner").delay(500).fadeOut(400, function() {
+        document.documentElement.style.setProperty('--backRightIn', 'translateX(100%)')
+        document.documentElement.style.setProperty('--backLefttIn', 'translateX(-100%)')
+        $(".loader").fadeOut(1500);
     });
     $("body").css("overflow-y", "auto");
+
+    // let Height          = window.innerHeight;
+    // let heightHeader    = $("header").innerHeight();
+
+    // $(".main-body-home, .bg-image").height(Height) - heightHeader;
 
 });
 

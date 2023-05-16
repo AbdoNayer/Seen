@@ -2,7 +2,6 @@
 @use '../abstracts/variables' as *;
 
 @media (max-width: 990px) {
-    
 
     // Nav
     nav{
@@ -18,6 +17,33 @@
         contain: size style layout;
         li{
             display: block;
+        }
+    }
+
+    .main-body-home{
+        .img-info-home{
+            margin-top: 100px;
+            &::after{
+                width: 100%;
+                height: 580px;
+            }
+            .shame{
+                display: none;
+            }
+            .bg-in{
+                width: 100%;
+                height: 570px;
+            }
+        }
+        .over-watch{
+            flex-direction: column;
+            .in-box-home{
+                width: 100%;
+                margin: 10px 0;
+                .icon-down{
+                    transform: rotate(90deg);
+                }
+            }
         }
     }
 

@@ -13,6 +13,16 @@ html[dir=ltr] {
         transform: translateX(-100%);  
         left: 0;            
     }
+    
+    // Home
+    .main-body-home{
+        .img-info-home{
+            .shame{
+                left: -60px;
+                transform: scale(-1.1, 1.1);
+            }
+        }
+    }
 
     // Media
     @media (max-width: 990px) {
@@ -37,6 +47,15 @@ html[dir=rtl] {
     .overlay-fixed{
         transform: translateX(100%);  
         right: 0;            
+    }
+    
+    // Home
+    .main-body-home{
+        .img-info-home{
+            .shame{
+                right: -60px;
+            }
+        }
     }
 
     // Media

@@ -96,3 +96,41 @@
         }
     }
 }
+
+// Home
+.main-body-home{
+    .bg-image{
+        background-image: url('../../images/vector.png');
+        // background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .img-info-home{
+        &::after{
+            content: "";
+            @include positionItem(absolute, 0, initial, 0, 0, rotate(-10deg));
+            background-color: $BgDarkOverlayColor;
+            width: 420px;
+            height: 580px;
+            border-radius: 15px;
+        }
+        .shame{
+            @include positionItem(absolute, initial, 170px, initial, initial, initial);
+            max-width: 150px;
+        }
+        .bg-in{
+            width: 410px;
+            height: 570px;
+            border-radius: 15px;
+            z-index: 9;
+        }
+    }
+    .in-box-home{
+        width: 300px;
+        padding: 15px;
+        border-radius: 10px;
+        .icon-down{
+            transform: rotate(90deg);
+        }
+    }
+}

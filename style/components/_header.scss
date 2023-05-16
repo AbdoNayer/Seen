@@ -2,5 +2,16 @@
 @use '../abstracts/variables' as *;
 
 header{
-    
+    .logo{
+        img{
+            max-width: 70px;
+        }
+    }
+    .last-control{
+        a{
+            &:nth-child(2){
+                margin: 0 40px;
+            }
+        }
+    }
 }

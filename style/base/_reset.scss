@@ -5,6 +5,12 @@
 @import '../abstracts/mixins';
 @import '../abstracts/variables';
 
+// Root Var
+:root {
+    --backRightIn: translateX(0);
+    --backLefttIn: translateX(0);
+}
+
 // Local Style Page
 
 * {
@@ -127,6 +133,10 @@ select {
     background-color : $BgColorInput !important
 }
 
+.bgColorMainOp{
+    background-color: #CAFFF4;
+}
+
 // Border Color
 
 .borderColorMain{
@@ -172,6 +182,10 @@ button{
 
 .back{
     transform: translate(0) !important;
+}
+
+.hv{
+    height: 100vh;
 }
 
 .owl-carousel{
@@ -220,10 +234,19 @@ button{
     font-size: 13px;
 }
 
+.small-font-14{
+    font-size: 14px;
+}
+
 // Circle Icon BTN
 .icon-circle{
     width: 35px;
     height: 35px;
+}
+
+.img-circle{
+    width: 50px;
+    height: 50px;
 }
 
 // Img Contain
