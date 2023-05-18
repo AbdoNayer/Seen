@@ -10,11 +10,6 @@ $(window).on('load', function () {
     });
     $("body").css("overflow-y", "auto");
 
-    // let Height          = window.innerHeight;
-    // let heightHeader    = $("header").innerHeight();
-
-    // $(".main-body-home, .bg-image").height(Height) - heightHeader;
-
 });
 
 $(document).ready(function () {

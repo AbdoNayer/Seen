@@ -3,6 +3,11 @@
 
 @media (max-width: 990px) {
 
+    // classes
+    .w-50, .w-75{
+        width: 100% !important;
+    }
+
     // Nav
     nav{
         @include positionItem(fixed, 0, initial, initial, initial, initial);
@@ -20,6 +25,7 @@
         }
     }
 
+    // Home
     .main-body-home{
         .img-info-home{
             margin-top: 100px;
@@ -44,6 +50,13 @@
                     transform: rotate(90deg);
                 }
             }
+        }
+    }
+
+    // Auth
+    .main-body-auth{
+        .col{
+            display: none;
         }
     }
 

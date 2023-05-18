@@ -13,7 +13,6 @@
   flex-direction: row;
   flex-wrap: initial;
   z-index: 99999;
-  display: none;
 }
 .loader::after {
   content: "";
@@ -212,13 +211,13 @@ ul {
 
 input {
   border: 1px solid #CFCFCF;
-  padding: 10px 20px;
-  border-radius: 2px;
+  padding: 13px 20px;
+  border-radius: 7px;
 }
 
 textarea {
   border: 1px solid #CFCFCF;
-  padding: 10px 20px;
+  padding: 13px 20px;
   border-radius: 2px;
   min-height: 100px;
   resize: none;
@@ -272,6 +271,18 @@ select {
   color: #6D6D6D !important;
 }
 
+.mainColorOp {
+  color: #6EBCC1;
+}
+
+.textLabelColor {
+  color: #6D6D6D;
+}
+
+.icon-star {
+  color: #FFC107;
+}
+
 .bgColorMain {
   background-color: #4ECEB6 !important;
 }
@@ -286,6 +297,14 @@ select {
 
 .bgColorMainOp {
   background-color: #CAFFF4;
+}
+
+.bgMainOp {
+  background-color: #6EBCC1;
+}
+
+.bgBody {
+  background-color: #F2F2F2;
 }
 
 .borderColorMain {
@@ -308,8 +327,10 @@ button {
 
 .btn-button {
   height: 40px;
+  line-height: 42px;
   width: 160px;
-  font-size: 14px;
+  font-size: 15px;
+  border-radius: 10px;
 }
 .btn-button:hover {
   transform: scale(0.9);
@@ -437,6 +458,55 @@ button {
   left: -25px;
   background-color: #57AE9E;
   opacity: 33%;
+}
+
+.chick-box {
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.chick-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: auto;
+}
+.chick-box input:checked ~ .checkmark {
+  background-color: #4ECEB6;
+  border: 1px solid #4ECEB6;
+}
+.chick-box input:checked ~ .checkmark:after {
+  display: block;
+}
+.chick-box .checkmark {
+  position: relative;
+  top: 0;
+  bottom: initial;
+  right: 0;
+  left: initial;
+  transform: initial;
+  margin: auto;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  border-radius: 3px;
+  border: 1px solid #4ECEB6;
+  display: inline-block;
+  vertical-align: middle;
+}
+.chick-box .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 2px;
+  width: 8px;
+  height: 14px;
+  border: solid #FFF;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
 }
 
 .click-nav {
@@ -578,7 +648,51 @@ button {
   transform: rotate(90deg);
 }
 
+.main-body-auth::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  background-color: #6EBCC1;
+}
+.main-body-auth .auth-form {
+  border-radius: 20px;
+}
+.main-body-auth .auth-form .form-validation form .input-form .input-val span {
+  position: absolute;
+  top: initial;
+  bottom: -12px;
+  right: initial;
+  left: initial;
+  transform: initial;
+  margin: auto;
+}
+.main-body-auth .auth-form .form-validation form .input-form .input-count input {
+  width: 50px;
+  height: 50px;
+}
+.main-body-auth .auth-form .form-validation form .befor-title::after {
+  content: "";
+  background-color: #6EBCC1;
+  height: 1px;
+  width: 30%;
+  display: inline-block;
+}
+.main-body-auth .auth-form .form-validation form .befor-title::before {
+  content: "";
+  background-color: #6EBCC1;
+  height: 1px;
+  width: 30%;
+  display: inline-block;
+}
+.main-body-auth .logo {
+  border-radius: 15px 0 0 15px;
+}
+
 @media (max-width: 990px) {
+  .w-50, .w-75 {
+    width: 100% !important;
+  }
   nav {
     position: fixed;
     top: 0;
@@ -627,6 +741,9 @@ button {
   .main-body-home .over-watch .in-box-home .icon-down {
     transform: rotate(90deg);
   }
+  .main-body-auth .col {
+    display: none;
+  }
 }
 html[dir=ltr] body {
   direction: ltr;
@@ -638,6 +755,12 @@ html[dir=ltr] .overlay-fixed {
 html[dir=ltr] .main-body-home .img-info-home .shame {
   left: -60px;
   transform: scale(-1.1, 1.1);
+}
+html[dir=ltr] .main-body-auth::before {
+  right: 0;
+}
+html[dir=ltr] .main-body-auth .auth-form .form-validation form .input-form .input-val span {
+  right: 20px;
 }
 @media (max-width: 990px) {
   html[dir=ltr] nav {
@@ -655,6 +778,15 @@ html[dir=rtl] .overlay-fixed {
 }
 html[dir=rtl] .main-body-home .img-info-home .shame {
   right: -60px;
+}
+html[dir=rtl] .main-body-auth::before {
+  left: 0;
+}
+html[dir=rtl] .main-body-auth .auth-form .form-validation form .input-form .input-val span {
+  left: 20px;
+}
+html[dir=rtl] .dropdown-menu {
+  text-align: right;
 }
 @media (max-width: 990px) {
   html[dir=rtl] nav {

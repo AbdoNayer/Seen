@@ -61,13 +61,13 @@ ul{
 
 input{
     border: 1px solid $BorderColorInput;
-    padding: 10px 20px;
-    border-radius: 2px;
+    padding: 13px 20px;
+    border-radius: 7px;
 }
 
 textarea{
     border: 1px solid $BorderColorInput;
-    padding: 10px 20px;
+    padding: 13px 20px;
     border-radius: 2px;
     min-height: 100px;
     resize: none;
@@ -119,6 +119,18 @@ select {
     color: $SecondColor !important;
 }
 
+.mainColorOp{
+    color: $BgOpMainColor;
+}
+
+.textLabelColor{
+    color: $LabelText;
+}
+
+.icon-star{
+    color: #FFC107;
+}
+
 // Bg Colors
 
 .bgColorMain{
@@ -135,6 +147,14 @@ select {
 
 .bgColorMainOp{
     background-color: #CAFFF4;
+}
+
+.bgMainOp{
+    background-color: $BgOpMainColor;
+}
+
+.bgBody{
+    background-color: #F2F2F2;
 }
 
 // Border Color
@@ -161,8 +181,10 @@ button{
   
 .btn-button{
     height: 40px;
+    line-height: 42px;
     width: 160px;
-    font-size: 14px;
+    font-size: 15px;
+    border-radius: 10px;
     &:hover{
       transform: scale(0.9);
     }

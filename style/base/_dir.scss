@@ -24,6 +24,26 @@ html[dir=ltr] {
         }
     }
 
+    // Auth
+    .main-body-auth{
+        &::before{
+            right: 0;
+        }
+        .auth-form{
+            .form-validation{
+                form{
+                    .input-form{
+                        .input-val{
+                            span{
+                                right: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     // Media
     @media (max-width: 990px) {
         // Nav
@@ -56,6 +76,31 @@ html[dir=rtl] {
                 right: -60px;
             }
         }
+    }
+
+    // Auth
+    .main-body-auth{
+        &::before{
+            left: 0;
+        }
+        .auth-form{
+            .form-validation{
+                form{
+                    .input-form{
+                        .input-val{
+                            span{
+                                left: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Drop Down
+    .dropdown-menu{
+        text-align: right;
     }
 
     // Media
