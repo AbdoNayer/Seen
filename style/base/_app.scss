@@ -22,6 +22,55 @@
     }
 }
 
+// Style ChickBox
+.chick-box {
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: auto;
+        &:checked {
+            ~ .checkmark {
+                background-color: $mainColor;
+                border: 1px solid $mainColor;
+            }
+            ~ .checkmark:after {
+                display: block;
+            }
+        }
+    }
+    .checkmark {
+        @include positionItem(relative, 0, initial, 0, initial, initial);
+        height: 20px;
+        width: 20px;
+        background-color: #f8f8f8;
+        border-radius: 3px;
+        border: 1px solid #ddd;
+        display: inline-block;
+        vertical-align: middle;
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 5px;
+            top: 1px;
+            width: 8px;
+            height: 13px;
+            border: solid $whiteColor;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+}
+
 // Style Click Nav
 .click-nav {
     display: none;
