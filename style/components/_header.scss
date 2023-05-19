@@ -7,11 +7,38 @@ header{
             max-width: 70px;
         }
     }
+    ul{
+        li{
+            a{
+                position: relative;
+                &::after{
+                    content: "";
+                    @include positionItem(absolute, initial, 10px, 0, 0, initial);
+                    @include transition(0.5s);
+                    width: 0;
+                    height: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-bottom: 10px solid $White;
+                    transform: translateY(10px);
+                    visibility: hidden;
+                    opacity: 0;
+                }
+            }
+            &.active, &:hover{
+                a{
+                    &::after{
+                        transform: translateY(0);
+                        visibility: initial;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
     .last-control{
         a{
-            &:nth-child(2){
-                margin: 0 40px;
-            }
+            margin: 0 20px;
         }
     }
 }

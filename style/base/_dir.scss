@@ -22,6 +22,20 @@ html[dir=ltr] {
                 transform: scale(-1.1, 1.1);
             }
         }
+        &.about{
+            .img-info-home{
+                &::after{
+                    left: 0;
+                    right: auto;
+                }
+                &::before{
+                    left: 20px;
+                }
+            }
+            .shame{
+                left: 0;
+            }
+        }
     }
 
     // Auth
@@ -47,7 +61,7 @@ html[dir=ltr] {
     // Media
     @media (max-width: 990px) {
         // Nav
-        nav{
+        .nav-header{
             transform: translateX(-100%);  
             left: 0;
         }
@@ -74,6 +88,20 @@ html[dir=rtl] {
         .img-info-home{
             .shame{
                 right: -60px;
+            }
+        }
+        &.about{
+            .img-info-home{
+                &::after{
+                    right: 0;
+                    left: auto;
+                }
+                &::before{
+                    right: 20px;
+                }
+            }
+            .shame{
+                right: 0;
             }
         }
     }
@@ -106,7 +134,7 @@ html[dir=rtl] {
     // Media
     @media (max-width: 990px) {
         // Nav
-        nav{
+        .nav-header{
             transform: translateX(100%);  
             right: 0; 
         }

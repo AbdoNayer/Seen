@@ -27,16 +27,13 @@ $(document).ready(function () {
     // Click Open Nav In Mobile
     $(document).on("click", ".click-nav, .overlay, .modal-country",function() {
         $(".handle").toggleClass("closed");
-        $("nav").toggleClass("back");
+        $(".nav-header").toggleClass("back");
         $(".overlay-fixed").toggleClass("back");
-        $("nav li").toggleClass("animSlideIn");
         $("body").toggleClass("overflow-hidden");
     });
     
     // Click Remove Class For All Section
     $(document).on("click", ".overlay-absolute",function() {
-        $(".form-search").removeClass("showing");
-        $(".up-in-filter").removeClass("showing");
         $("body").removeClass("overflow-hidden");
     });
 

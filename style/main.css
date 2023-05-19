@@ -152,8 +152,38 @@
 header .logo img {
   max-width: 70px;
 }
-header .last-control a:nth-child(2) {
-  margin: 0 40px;
+header ul li a {
+  position: relative;
+}
+header ul li a::after {
+  content: "";
+  position: absolute;
+  top: initial;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  transform: initial;
+  margin: auto;
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #FFF;
+  transform: translateY(10px);
+  visibility: hidden;
+  opacity: 0;
+}
+header ul li.active a::after, header ul li:hover a::after {
+  transform: translateY(0);
+  visibility: initial;
+  opacity: 1;
+}
+header .last-control a {
+  margin: 0 20px;
 }
 
 :root {
@@ -520,7 +550,7 @@ button {
   justify-content: center;
 }
 .click-nav .handle {
-  background: #4ECEB6;
+  background: #FFF;
   height: 1px;
   width: 100%;
   margin: 0.32em auto;
@@ -647,6 +677,47 @@ button {
 .main-body-home .in-box-home .icon-down {
   transform: rotate(90deg);
 }
+.main-body-home.about .img-info-home::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: initial;
+  right: 0;
+  left: auto;
+  transform: translateY(-50%);
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  width: 85% !important;
+  height: 80% !important;
+}
+.main-body-home.about .img-info-home::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: initial;
+  right: 20px;
+  left: initial;
+  transform: translateY(-50%);
+  margin: auto;
+  background-color: #FFF;
+  width: 85%;
+  height: 90%;
+  border-radius: 15px;
+}
+.main-body-home.about .img-info-home .shame {
+  position: absolute;
+  top: initial;
+  bottom: -140px;
+  right: 0;
+  left: 0;
+  transform: scale(-1.1, 1.1) rotate(20deg);
+  margin: auto;
+  max-width: 150px;
+}
+.main-body-home.about .img-info-home .bg-in {
+  width: 85%;
+  height: 450px;
+}
 
 .main-body-auth::before {
   content: "";
@@ -693,7 +764,25 @@ button {
   .w-50, .w-75 {
     width: 100% !important;
   }
-  nav {
+  .pt-5 {
+    padding-top: 20px !important;
+  }
+  .pb-5 {
+    padding-bottom: 20px !important;
+  }
+  .mt-5 {
+    margin-top: 20px !important;
+  }
+  .mb-5 {
+    margin-bottom: 20px !important;
+  }
+  .ps-5 {
+    padding-left: 0 !important;
+  }
+  .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    width: 100% !important;
+  }
+  .nav-header {
     position: fixed;
     top: 0;
     bottom: initial;
@@ -705,6 +794,7 @@ button {
     -o-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
+    background-color: #FFF;
     z-index: 999;
     width: 250px;
     height: 100%;
@@ -713,9 +803,45 @@ button {
     -webkit-overflow-scrolling: touch;
     will-change: scroll-position;
     contain: size style layout;
+    flex-direction: column;
+    align-items: initial !important;
+    justify-content: initial !important;
   }
-  nav li {
+  .nav-header .text-white {
+    color: #4ECEB6 !important;
+    padding: 0 20px;
+  }
+  .nav-header ul {
+    flex-direction: column;
+    align-items: initial !important;
+    padding: 0 !important;
+  }
+  .nav-header ul li {
     display: block;
+  }
+  .nav-header ul li a {
+    display: block;
+    margin: 0 !important;
+  }
+  .nav-header .last-control {
+    align-items: initial !important;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .nav-header .last-control a {
+    margin: 10px 0 !important;
+    padding: 0 20px;
+    display: block;
+  }
+  .nav-header .last-control a:last-child {
+    align-self: flex-end;
+  }
+  .in-head-mobile {
+    width: 100%;
+  }
+  .click-nav {
+    display: flex !important;
   }
   .main-body-home .img-info-home {
     margin-top: 100px;
@@ -741,8 +867,43 @@ button {
   .main-body-home .over-watch .in-box-home .icon-down {
     transform: rotate(90deg);
   }
+  .main-body-home .info-head {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .main-body-home.about .img-info-home {
+    margin-top: 0px;
+  }
+  .main-body-home.about .list-links {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    padding-bottom: 50px !important;
+  }
+  .main-body-home.about .list-links ul {
+    flex-wrap: wrap;
+  }
+  .main-body-home.about .list-links ul li {
+    flex-basis: 50%;
+    margin: 10px 0;
+  }
   .main-body-auth .col {
     display: none;
+  }
+  .main-body-auth .container {
+    align-items: initial !important;
+  }
+  .main-body-auth .auth-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto !important;
+  }
+  .main-body-auth .auth-form .row {
+    width: 100%;
+    margin: 0;
+  }
+  .main-body-auth.in-auth-mini .auth-form {
+    justify-content: center;
   }
 }
 html[dir=ltr] body {
@@ -756,6 +917,16 @@ html[dir=ltr] .main-body-home .img-info-home .shame {
   left: -60px;
   transform: scale(-1.1, 1.1);
 }
+html[dir=ltr] .main-body-home.about .img-info-home::after {
+  left: 0;
+  right: auto;
+}
+html[dir=ltr] .main-body-home.about .img-info-home::before {
+  left: 20px;
+}
+html[dir=ltr] .main-body-home.about .shame {
+  left: 0;
+}
 html[dir=ltr] .main-body-auth::before {
   right: 0;
 }
@@ -763,7 +934,7 @@ html[dir=ltr] .main-body-auth .auth-form .form-validation form .input-form .inpu
   right: 20px;
 }
 @media (max-width: 990px) {
-  html[dir=ltr] nav {
+  html[dir=ltr] .nav-header {
     transform: translateX(-100%);
     left: 0;
   }
@@ -779,6 +950,16 @@ html[dir=rtl] .overlay-fixed {
 html[dir=rtl] .main-body-home .img-info-home .shame {
   right: -60px;
 }
+html[dir=rtl] .main-body-home.about .img-info-home::after {
+  right: 0;
+  left: auto;
+}
+html[dir=rtl] .main-body-home.about .img-info-home::before {
+  right: 20px;
+}
+html[dir=rtl] .main-body-home.about .shame {
+  right: 0;
+}
 html[dir=rtl] .main-body-auth::before {
   left: 0;
 }
@@ -789,7 +970,7 @@ html[dir=rtl] .dropdown-menu {
   text-align: right;
 }
 @media (max-width: 990px) {
-  html[dir=rtl] nav {
+  html[dir=rtl] .nav-header {
     transform: translateX(100%);
     right: 0;
   }
