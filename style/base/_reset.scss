@@ -26,6 +26,7 @@ body {
     padding: 0;
     overflow-x: hidden !important;
     font-family: 'Tajawal', sans-serif;
+    line-height:normal
 }
 
 a, button, input, textarea, i{
@@ -61,7 +62,7 @@ ul{
 
 input{
     border: 1px solid $BorderColorInput;
-    padding: 13px 20px;
+    padding: 11px 20px;
     border-radius: 7px;
 }
 
@@ -145,6 +146,10 @@ select {
     background-color : $BgColorInput !important
 }
 
+.bgManinOverlayColor{
+    background-color: $BgManinOverlayColor !important;
+}
+
 .bgColorMainOp{
     background-color: #CAFFF4;
 }
@@ -169,6 +174,22 @@ select {
 
 .borderColorInput{
     border: 1px solid $BorderColorInput !important;
+}
+
+.borderWhite{
+    border-color: $White !important;
+}
+
+.borderMainOp{
+    border-color: $BgOpMainColor !important;
+}
+
+.borderMain{
+    border-color: $MainColor !important;
+}
+
+.borderDanger{
+    border-color: #f00 !important;
 }
 
 // Class Important

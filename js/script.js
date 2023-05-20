@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     // // ADD IMAGE
     $('.image-uploader').change(function (event){
-        $(this).parents('.images-upload-block').append('<div class="uploaded-block"><img src="'+ URL.createObjectURL(event.target.files[0]) +'"><button class="close"><i class="icon-trash text-white"></i></button></div>');
+        $(this).parents('.images-upload-block').find('.upload-area').append('<div class="uploaded-block"><img src="'+ URL.createObjectURL(event.target.files[0]) +'"><button class="close"><i class="icon-trash text-white"></i></button></div>');
     });
     
     // REMOVE IMAGE
