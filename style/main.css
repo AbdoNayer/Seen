@@ -298,6 +298,10 @@ select {
   color: #4ECEB6 !important;
 }
 
+.colorXMain {
+  color: #13848B !important;
+}
+
 .secondColor {
   color: #6D6D6D !important;
 }
@@ -316,6 +320,10 @@ select {
 
 .bgColorMain {
   background-color: #4ECEB6 !important;
+}
+
+.bgXMain {
+  background-color: #13848B !important;
 }
 
 .bgSecondColor {

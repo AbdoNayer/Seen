@@ -224,7 +224,52 @@
                                      </div>
                                  </div>
                             </div>
-                            <div class="tab-pane fade" id="list-dolar" role="tabpanel" aria-labelledby="list-dolar-tab"></div>
+                            <div class="tab-pane fade show active" id="list-dolar" role="tabpanel" aria-labelledby="list-dolar-tab">
+                                <div class="list-dolar-view p-4">
+                                    <h5 class="border-bottom borderMain colorMain d-inline-block pb-2">قوائم الاسعار</h5>
+                                    <div class="all-list-dolar">
+                                        <div class="height-view-scroll">
+                                            <div class="bgBody rounded-3 p-3 my-2">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="flex-fill ps-3">
+                                                        <h5>إشتراك المرحلة الثانوية</h5>
+                                                        <p class="small-font-12">هذا النص مثال علي الكلام المكتوب في هذه المنطقه ولا يمثل اي محتوي حقيقي , هذا النص مثال علي الكلام</p>
+                                                        <strong>القيمه : 100 ريال </strong>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <span class="textLabelColor small-font-13"> 11:00صباحا  , الثلاثاء 10 نوفمبر</span>
+                                                        <div class="d-flex align-items-center justify-content-center mt-3">
+                                                            <button class="icon-circle bgColorMain rounded-3 mx-2"><i class="icon-edit text-white"></i></button>
+                                                            <button class="icon-circle bg-danger rounded-3 mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="icon-trash text-white"></i></button>
+                                                        </div>
+                                                        <button class="btn-button bgXMain text-white mt-3">عرض الإشتراكات</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bgBody rounded-3 p-3 my-2">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="flex-fill ps-3">
+                                                        <h5>إشتراك المرحلة الثانوية</h5>
+                                                        <p class="small-font-12">هذا النص مثال علي الكلام المكتوب في هذه المنطقه ولا يمثل اي محتوي حقيقي , هذا النص مثال علي الكلام</p>
+                                                        <strong>القيمه : 100 ريال </strong>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <span class="textLabelColor small-font-13"> 11:00صباحا  , الثلاثاء 10 نوفمبر</span>
+                                                        <div class="d-flex align-items-center justify-content-center mt-3">
+                                                            <button class="icon-circle bgColorMain rounded-3 mx-2"><i class="icon-edit text-white"></i></button>
+                                                            <button class="icon-circle bg-danger rounded-3 mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="icon-trash text-white"></i></button>
+                                                        </div>
+                                                        <button class="btn-button bgXMain text-white d-table m-auto mt-3">عرض الإشتراكات</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="bgColorMain rounded-3 text-white btn-button">
+                                            اضافه قائمه جديده
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="tab-pane fade" id="offers" role="tabpanel" aria-labelledby="offers-tab">
                                 <div class="offers p-4">
                                     <h5 class="border-bottom borderMain colorMain d-inline-block pb-2">العروض</h5>
@@ -292,9 +337,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="massage" role="tabpanel" aria-labelledby="massage-tab"></div>
-                            <div class="tab-pane fade" id="user" role="tabpanel" aria-labelledby="user-tab"></div>
-                            <div class="tab-pane fade show active" id="belongings" role="tabpanel" aria-labelledby="belongings-tab">
+                            <div class="tab-pane fade" id="massage" role="tabpanel" aria-labelledby="massage-tab">
+
+                            </div>
+                            <div class="tab-pane fade" id="user" role="tabpanel" aria-labelledby="user-tab">
+
+                            </div>
+                            <div class="tab-pane fade" id="belongings" role="tabpanel" aria-labelledby="belongings-tab">
                                 <div class="belongings p-4">
                                     <h5 class="border-bottom borderMain colorMain d-inline-block pb-2">مستحقاتي</h5>
                                     <div class="d-flex align-items-center justify-content-between flex-column height-view-scroll">
@@ -302,7 +351,7 @@
                                             <h4 class="text-white">قيمة المستحقات</h4>
                                             <h1 class="text-white fw-bold">3455 ريال</h1>
                                         </div>
-                                        <button class="bgColorMain rounded-3 text-white btn-button" data-bs-toggle="modal" data-bs-target="#belongings">
+                                        <button class="bgColorMain rounded-3 text-white btn-button" data-bs-toggle="modal" data-bs-target="#ModalBelongings">
                                             طلب المستحقات
                                         </button>
                                     </div>
@@ -316,20 +365,76 @@
         </div>
     </div>
 
-    <!-- Modal Remove Offer -->
-    <div class="add-belongings modal fade" id="belongings" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal Add Belongings -->
+    <div class="add-belongings modal fade" id="ModalBelongings" tabindex="-1" aria-labelledby="modalbelongingsLabel" aria-hidden="false">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content py-2">
                 <div class="modal-header w-100 border-0 d-flex align-items-center justify-content-between">
-                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <h5 class="modal-title flex-fill text-center" id="modalbelongingsLabel">طلب المستحقات</h5>
                     <button data-bs-dismiss="modal" aria-label="Close"><i  class="icon-close colorMain fs-5"></i></button>
                 </div>
                 <div class="modal-body text-center py-4">
-                    <img src="./images/notfound.png" alt="">
-                    <h5 class="fw-bold my-4">هل انت متأكد من الحذف؟</h5>
+                    <h5 class="textLabelColor my-5 py-5 px-3">
+                        لم يتم إضافة اي حساب بنكي بعد
+                        <br/>
+                        يجب إضافة حساب لتتمكن من طلب مستحقاتك
+                    </h5>
                 </div>
                 <div class="modal-footer border-0 justify-content-center">
-                    <button class="border btn-button borderDanger text-danger mx-2" data-bs-dismiss="modal">نعم متأكد</button>
+                    <button class="btn-button bgColorMain text-white mx-2" data-toggle="modal" data-bs-target="#ModalAddAccBank" data-bs-toggle="modal" data-bs-dismiss="modal">إضافة</button>
+                    <button class="border borderColorMain btn-button colorMain mx-2" data-bs-dismiss="modal">إلغاء</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Add New Bank -->
+    <div class="add-acc-bank modal fade" id="ModalAddAccBank" tabindex="-1" aria-labelledby="AddAccBankLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content py-2">
+                <div class="modal-header w-100 border-0 d-flex align-items-center justify-content-between">
+                    <h5 class="modal-title flex-fill text-center" id="AddAccBankLabel">إضافة حساب بنكي</h5>
+                    <button data-bs-dismiss="modal" aria-label="Close"><i  class="icon-close colorMain fs-5"></i></button>
+                </div>
+                <div class="modal-body py-4">
+                    <form action="">
+                        <div class="my-4">
+                            <label class="mb-2">رقم الحساب</label>
+                            <input placeholder="اكتب هنا" class="w-100 borderColorInput bgBody" />
+                        </div>
+                        <div class="my-4">
+                            <label class="mb-2">إسم البنك</label>
+                            <input placeholder="اكتب هنا" class="w-100 borderColorInput bgBody" />
+                        </div>
+                        <div class="my-4">
+                            <label class="mb-2">إسم صاحب الحساب</label>
+                            <input placeholder="اكتب هنا" class="w-100 borderColorInput bgBody" />
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button class="btn-button bgColorMain text-white mx-2" data-toggle="modal" data-bs-target="#ModalDoneAddBank" data-bs-toggle="modal" data-bs-dismiss="modal">إضافة</button>
+                    <button class="border borderColorMain btn-button colorMain mx-2" data-bs-dismiss="modal">إلغاء</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Done Add Bank -->
+    <div class="done-bank modal fade" id="ModalDoneAddBank" tabindex="-1" aria-labelledby="modalBankDoneLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content py-2">
+                <div class="modal-header w-100 border-0 d-flex align-items-center justify-content-between">
+                    <h5 class="modal-title flex-fill text-center" id="modalBankDoneLabel">طلب المستحقات</h5>
+                    <button data-bs-dismiss="modal" aria-label="Close"><i  class="icon-close colorMain fs-5"></i></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <h5 class="textLabelColor my-5 py-5 px-3">
+                        هل انت متأكد من طلب المستحقات ؟
+                    </h5>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button class="btn-button bgColorMain text-white mx-2" data-bs-dismiss="modal">نعم متأكد</button>
                     <button class="border borderColorMain btn-button colorMain mx-2" data-bs-dismiss="modal">إلغاء</button>
                 </div>
             </div>
@@ -345,13 +450,11 @@
                     <button data-bs-dismiss="modal" aria-label="Close"><i  class="icon-close colorMain fs-5"></i></button>
                 </div>
                 <div class="modal-body text-center py-4">
-                    <h5 class="fw-bold my-4">
-                        لم يتم إضافة اي حساب بنكي بعد
-                        يجب إضافة حساب لتتمكن من طلب مستحقاتك
-                    </h5>
+                    <img src="./images/notfound.png" alt="">
+                    <h5 class="fw-bold my-4">هل انت متأكد من الحذف؟</h5>
                 </div>
                 <div class="modal-footer border-0 justify-content-center">
-                    <button class="btn-button bgColorMain text-danger mx-2" data-bs-dismiss="modal">إضافة</button>
+                    <button class="border btn-button borderDanger text-danger mx-2" data-bs-dismiss="modal">نعم متأكد</button>
                     <button class="border borderColorMain btn-button colorMain mx-2" data-bs-dismiss="modal">إلغاء</button>
                 </div>
             </div>

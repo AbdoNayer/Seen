@@ -116,6 +116,10 @@ select {
     color: $MainColor !important;
 }
 
+.colorXMain{
+    color: $XMain !important;
+}
+
 .secondColor{
     color: $SecondColor !important;
 }
@@ -136,6 +140,10 @@ select {
 
 .bgColorMain{
     background-color: $MainColor !important;
+}
+
+.bgXMain{
+    background-color: $XMain !important;
 }
 
 .bgSecondColor{
