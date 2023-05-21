@@ -785,6 +785,15 @@ button {
   border-radius: 15px 0 0 15px;
 }
 
+.body-dashboard .belongings .bg-con-belong {
+  height: 200px;
+  background-image: url("../../images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  border-radius: 20px;
+}
+
 .remove-offer img {
   max-width: 350px;
 }
