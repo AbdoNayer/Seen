@@ -667,6 +667,18 @@ button {
   z-index: 9;
 }
 
+.bg-shape-image .upload-img {
+  height: 166px;
+  background-image: url("../../images/sh-border.png");
+  background-position: initial;
+}
+
+.custom-file-upload {
+  border: 1px solid #CFCFCF;
+  padding: 11px 20px;
+  border-radius: 7px;
+}
+
 .main-body-home .bg-image {
   background-image: url("../../images/vector.png");
   background-repeat: no-repeat;
@@ -955,6 +967,9 @@ button {
 html[dir=ltr] body {
   direction: ltr;
 }
+html[dir=ltr] .fix-icon-Input {
+  right: 10px;
+}
 html[dir=ltr] .overlay-fixed {
   transform: translateX(-100%);
   left: 0;
@@ -988,6 +1003,9 @@ html[dir=ltr] .main-body-auth .auth-form .form-validation form .input-form .inpu
 
 html[dir=rtl] body {
   direction: rtl;
+}
+html[dir=rtl] .fix-icon-Input {
+  left: 10px;
 }
 html[dir=rtl] .overlay-fixed {
   transform: translateX(100%);

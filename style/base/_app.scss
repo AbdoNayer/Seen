@@ -155,6 +155,21 @@
     }
 }
 
+.bg-shape-image{
+    .upload-img{
+        height: 166px;
+        background-image: url('../../images/sh-border.png');
+        background-position: initial;
+    }
+}
+
+// File Upload
+.custom-file-upload{
+    border: 1px solid $BorderColorInput;
+    padding: 11px 20px;
+    border-radius: 7px;
+}
+
 // Home
 .main-body-home{
     .bg-image{

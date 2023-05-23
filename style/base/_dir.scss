@@ -9,6 +9,10 @@ html[dir=ltr] {
         direction: ltr;
     }
 
+    .fix-icon-Input{
+        right: 10px;
+    }
+
     .overlay-fixed{
         transform: translateX(-100%);  
         left: 0;            
@@ -76,6 +80,10 @@ html[dir=rtl] {
     // Body App
     body{
         direction: rtl;
+    }
+
+    .fix-icon-Input{
+        left: 10px;
     }
 
     .overlay-fixed{
