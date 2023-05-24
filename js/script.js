@@ -54,6 +54,50 @@ $(document).ready(function () {
         $(this).prev('label').text(file);
     });
 
+    $(".done-subscription").fadeOut("");
+    $(".form-add-services").fadeOut("");
+    $(".form-add-new-list").fadeOut("");
+    $(".show-list-subscription").fadeOut("");
+    $(".form-new-offer").fadeOut("");
+
+    // Show Subscription
+    $(document).on("click", ".next-subscription",function() {
+        $(".form-subscription").fadeOut("");
+        $(".done-subscription").fadeIn("");
+    });
+
+    // Show Form Services
+    $(document).on("click", ".add-new-services",function() {
+        $(".list-services").fadeToggle("");
+        $(".form-add-services").fadeToggle("");
+    });
+
+    // Show Form List
+    $(document).on("click", ".add-new-list",function() {
+        $(".all-list-dolar").fadeToggle("");
+        $(".form-add-new-list").fadeToggle("");
+    });
+
+    // Show Subscription List
+    $(document).on("click", ".show-subscription",function() {
+        $(".all-list-dolar").fadeToggle("");
+        $(".show-list-subscription").fadeToggle("");
+    });
+
+    // Show Form New Offers
+    $(document).on("click", ".add-new-offer",function() {
+        $(".offers-list").fadeToggle("");
+        $(".form-new-offer").fadeToggle("");
+    });
+
+    // Done Subscription And Push To Home
+    $(document).on("click", ".done-add-subscription",function() {
+        setTimeout(function() {
+            $('#doneAddSubscriptionModal').modal('hide');
+            document.location.href = "/index-before-login.html";
+        }, 2000);
+    });
+
     // Animation Page
     AOS.init();
     

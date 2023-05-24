@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+    <!-- Title Page -->
+    <title>سين</title>
+
+    <!-- favicon Page -->
+    <link rel="shortcut icon" href="./images/logo.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <!-- Fancybox CSS -->
+    <meta name="theme-color" content="#121320">
+    <meta name="msapplication-navbutton-color" content="#121320">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#121320">
+
+    <!-- CSS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" href="./icons/icons.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style/main.css">
+
+</head>
+<body class="bgBody">
+
+    <!-- Loading App -->
+    <div class="loader w-100 h-100">
+        <div class="spinner">
+            <div class="item item-1"></div>
+            <div class="item item-2"></div>
+            <div class="item item-3"></div>
+            <div class="item item-4"></div>
+        </div>
+    </div>
+
+    <!-- Over Shadow -->
+    <div class="overlay-fixed w-100 h-100"></div>
+
+    <!-- Header -->
+    <header class="py-4 bgColorMain position-relative">
+        <div class="container">
+            <div class="d-flex align-items-center w-100">
+                <div class="in-head-mobile d-flex align-items-center justify-content-between">
+                    <a href="" class="logo">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                    <div class="click-nav">
+                        <div class='handle'></div>
+                        <div class='handle'></div>
+                        <div class='handle'></div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between flex-fill nav-header">
+                    <ul class="d-flex align-items-center px-5">
+                        <li class="active"><a href="index.html" class="text-white py-4 ms-5">الرئيسية</a></li>
+                        <li><a href="index.html" class="text-white py-4 ms-5">الخدمات</a></li>
+                        <li><a href="index.html" class="text-white py-4 ms-5">الرسائل</a></li>
+                        <li><a href="about.html" class="text-white py-4 ms-5">عن المنصه</a></li>
+                        <li><a href="index.html" class="text-white py-4 ms-5">الاعدادات</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center last-control">
+                        <div class="">
+                            <a href="" class="text-white fs-6 border px-3 py-1 rounded-2">العربية</a>
+                            <a href="profile.html">
+                                <img class="img-circle rounded-circle" src="./images/img.png" alt="">
+                            </a>
+                        </div>
+                        <a href="/login.html"><i class="icon-login text-white fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Body Content -->
+    <div class="main-body body-dashboard py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <div class="old-shadow bg-white rounded-3">
+                        <ul id="myTab" role="tablist" class="nav nav-tabs p-3 d-flex flex-column height-view-scroll">
+                            <li class="nav-item" role="presentation">
+                                <a href="/index.html" class="px-2 py-3">
+                                    <i class="icon-home fs-5"></i>
+                                    <span class="mx-2">الرئيسيه</span>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <a class="px-2 py-3 nav-link border-0 d-flex align-items-center">
+                                    <i class="icon-list fs-5"></i>
+                                    <span class="mx-2">الخدمات</span>
+                                    <div class="pop-hover position-relative">
+                                        <i class="icon-info text-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"></i>
+                                        <p class="m-0 d-flex text-danger">يجب عليك الاشتراك اولا لتتمكن من إضافه خدماتك</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <a class="px-2 py-3 nav-link border-0 d-flex align-items-center">
+                                    <i class="icon-dolar fs-5"></i>
+                                    <span class="mx-2">قوائم الاسعار</span>
+                                    <div class="pop-hover position-relative">
+                                        <i class="icon-info text-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"></i>
+                                        <p class="m-0 d-flex text-danger">يجب عليك الاشتراك اولا لتتمكن من إضافه خدماتك</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <a class="px-2 py-3 nav-link border-0 d-flex align-items-center">
+                                    <i class="icon-vote fs-5"></i>
+                                    <span class="mx-2">العروض</span>
+                                    <div class="pop-hover position-relative">
+                                        <i class="icon-info text-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"></i>
+                                        <p class="m-0 d-flex text-danger">يجب عليك الاشتراك اولا لتتمكن من إضافه خدماتك</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <a class="px-2 py-3 nav-link border-0 d-flex align-items-center">
+                                    <i class="icon-chat fs-5"></i>
+                                    <span class="mx-2">الرسائل</span>
+                                    <div class="pop-hover position-relative">
+                                        <i class="icon-info text-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"></i>
+                                        <p class="m-0 d-flex text-danger">يجب عليك الاشتراك اولا لتتمكن من إضافه خدماتك</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <a class="px-2 py-3 nav-link border-0 d-flex align-items-center">
+                                    <i class="icon-user fs-5"></i>
+                                    <span class="mx-2">حسابي</span>
+                                    <div class="pop-hover position-relative">
+                                        <i class="icon-info text-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"></i>
+                                        <p class="m-0 d-flex text-danger">يجب عليك الاشتراك اولا لتتمكن من إضافه خدماتك</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <a class="px-2 py-3 nav-link border-0 d-flex align-items-center">
+                                    <i class="icon-coins fs-5"></i>
+                                    <span class="mx-2">مستحقاتي</span>
+                                    <div class="pop-hover position-relative">
+                                        <i class="icon-info text-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"></i>
+                                        <p class="m-0 d-flex text-danger">يجب عليك الاشتراك اولا لتتمكن من إضافه خدماتك</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mt-auto">
+                                <a href="/login.html" class="px-2 py-3 text-danger">
+                                    <i class="icon-log-out fs-5"></i>
+                                    <span class="mx-2">تسجيل الخروج</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9 col-xs-12">
+                    <div class="old-shadow bg-white rounded-3 overflow-hidden p-4">
+                        <div class="form-subscription">
+                            <div class="container">
+                                <h5 class="border-bottom borderMain colorMain d-inline-block pb-2 mt-4">اشترك الان</h5>
+                                <!-- Form Services -->
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="m-0">اسم المؤسسه</h6>
+                                                <span class="text-danger fs-2 mt-2 mx-2">*</span>
+                                            </div>
+                                            <input placeholder="اكتب اسم المؤسسه هنا" class="w-100 borderColorInput bgBody" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="m-0">البريد الإلكتروني</h6>
+                                                <span class="text-danger fs-2 mt-2 mx-2">*</span>
+                                            </div>
+                                            <input placeholder="اكتب البريد هنا" class="w-100 borderColorInput bgBody" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="m-0">رقم الهاتف</h6>
+                                                <span class="text-danger fs-2 mt-2 mx-2">*</span>
+                                            </div>
+                                            <input placeholder="اكتب الرقم هنا" class="w-100 borderColorInput bgBody" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="m-0">وصف المؤسسة</h6>
+                                                <span class="text-danger fs-2 mt-2 mx-2">*</span>
+                                            </div>
+                                            <input placeholder="اكتب الرقم هنا" class="w-100 borderColorInput bgBody" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="m-0">موقعك</h6>
+                                                <span class="text-danger fs-2 mt-2 mx-2">*</span>
+                                            </div>
+                                            <div class="border rounded-3 overflow-hidden my-2">
+                                                <iframe width="100%" height="160" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=egypt,%20cairo+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="m-0">صوره</h6>
+                                                <span class="text-danger fs-2 mt-2 mx-2">*</span>
+                                            </div>
+                                            <div class="more-images bg-shape-image">
+                                                <div class="images-upload-block position-relative my-2">
+                                                    <label class="upload-img position-relative w-100 d-flex flex-column align-items-center justify-content-center">
+                                                        <input type="file" accept="image/*" class="image-uploader">
+                                                        <i class="icon-add-image fs-1 colorMain"></i>
+                                                        <strong class="colorMain my-3">اضف صور من هنا</strong>
+                                                        <strong class="colorMain small-font-12">برجاء رفع 5 صور علي الاقل</strong>
+                                                    </label>
+                                                    <div class="upload-area d-flex align-items-center justify-content-center mt-3 flex-wrap"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="m-0">فيديو</h6>
+                                                <span class="text-danger fs-2 mt-2 mx-2">*</span>
+                                            </div>
+                                            <div class="add-video bg-shape-image">
+                                                <div class="images-upload-block position-relative my-2">
+                                                    <label class="upload-img position-relative w-100 d-flex flex-column align-items-center justify-content-center">
+                                                        <input type="file" accept="video/*" class="video-uploader">
+                                                        <i class="icon-add-video fs-1 colorMain"></i>
+                                                        <strong class="colorMain my-3">اضف مقطع فيديو</strong>
+                                                    </label>
+                                                    <div class="upload-area d-flex align-items-center justify-content-center mt-3"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="m-0">الفئة</h6>
+                                                <span class="text-danger fs-2 mt-2 mx-2">*</span>
+                                            </div>
+                                            <input placeholder="اكتب الرقم هنا" class="w-100 borderColorInput bgBody" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="m-0">عدد الفصول</h6>
+                                                <span class="text-danger fs-2 mt-2 mx-2">*</span>
+                                            </div>
+                                            <input placeholder="اكتب الرقم هنا" class="w-100 borderColorInput bgBody" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="m-0">سعة الفصل</h6>
+                                                <span class="text-danger fs-2 mt-2 mx-2">*</span>
+                                            </div>
+                                            <input placeholder="اكتب الرقم هنا" class="w-100 borderColorInput bgBody" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="m-0">الجنس المقدم له الخدمة</h6>
+                                                <span class="text-danger fs-2 mt-2 mx-2">*</span>
+                                            </div>
+                                            <input placeholder="اكتب الرقم هنا" class="w-100 borderColorInput bgBody" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="">
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="m-0">المستندات المطلوبة</h6>
+                                                <span class="text-danger fs-2 mt-2 mx-2">*</span>
+                                            </div>
+                                            <label for="file-upload" class="custom-file-upload position-relative w-100 borderColorInput bgBody">
+                                                <h6 class="m-0 textLabelColor">أرفع المستندات من هنا</h6>
+                                                <button class="fix-icon-Input bgXMain text-white icon-circle rounded-3 d-flex align-items-center justify-content-center"><i class="icon-upload"></i></button>
+                                            </label>
+                                            <input id="file-upload" name='upload_cont_img' type="file" style="display:none;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center my-5">
+                                    <button class="next-subscription btn-button bgColorMain text-white mx-2">التالي</button>
+                                    <button class="border borderColorMain btn-button colorMain mx-2">إضافة فئة أخري</button>
+                                </div>
+                             </div>
+                         </div>
+                         <!-- Done Services -->
+                         <div class="done-subscription bgManinOverlayColor rounded-3 my-4 w-75 overflow-hidden">
+                            <div class="border-bottom borderWhite p-3">
+                                <h6 class="m-0">اسم المؤسسه</h6>
+                                <p class="textLabelColor m-0">مثال علي الاسم</p>
+                            </div>
+                            <div class="border-bottom borderWhite p-3">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h6 class="m-0">الفئه</h6>
+                                    <span class="colorMain">50 ريال</span>
+                                </div>
+                                <p class="textLabelColor m-0">كورسات</p>
+                            </div>
+                            <div class="border-bottom borderWhite p-3">
+                                <h6 class="m-0">الجنس المقدم له الخدمه</h6>
+                                <p class="textLabelColor m-0">ذكور</p>
+                            </div>
+                            <div class="border-bottom borderWhite p-3">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h6 class="m-0">المستوي التعليمي</h6>
+                                    <span class="colorMain">150 ريال</span>
+                                </div>
+                                <p class="textLabelColor m-0">الثانويه</p>
+                            </div>
+                            <div class="p-3">
+                                <h6 class="m-0">تاريخ بدء وانتهاء الاشتراك</h6>
+                                <p class="textLabelColor mt-1">من 7-7-2022 حتي 7-7-2023</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between p-3 border-top borderMainOp">
+                                <h6 class="m-0 fw-bold">الاجمالي</h6>
+                                <span class="colorMain fw-bold">520 ريال</span>
+                            </div>
+                            <button class="done-add-subscription btn-button bgColorMain text-white w-50 m-auto my-4 d-table" data-bs-toggle="modal" data-bs-target="#doneAddSubscriptionModal">اشتراك</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal Remove Offer -->
+    <div class="done-add-subscription remove-offer modal fade" id="doneAddSubscriptionModal" tabindex="-1" aria-labelledby="doneAddSubscriptionLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content py-2">
+                <div class="modal-header w-100 border-0 d-flex align-items-center justify-content-between">
+                    <h5 class="modal-title" id="doneAddSubscriptionLabel"></h5>
+                    <button data-bs-dismiss="modal" aria-label="Close"><i  class="icon-close colorMain fs-5"></i></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="./images/load.png" alt="" class="mb-4">
+                    <h6 class="mt-4">
+                        تم التقديم  بنجاح والأن طلبك تحت المراجعه ,
+                        <br />
+                        سيتم إشعارك بالقبول في اقرب وقت
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Remove Offer -->
+    <div class="remove-offer modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content py-2">
+                <div class="modal-header w-100 border-0 d-flex align-items-center justify-content-between">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button data-bs-dismiss="modal" aria-label="Close"><i  class="icon-close colorMain fs-5"></i></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="./images/notiy.png" alt="" class="mb-4">
+                    <h6 class="mt-4">
+                        انت لست مشترك بعد ، اشترك معنا 
+                        <br />
+                        حتي تتمكن من إضافه خدماتك
+                    </h6>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button class="bgColorMain btn-button text-white mx-2" data-bs-dismiss="modal">إشترك</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Plugin Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Plugin Animation Page -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Plugin Text Animation -->
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

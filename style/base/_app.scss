@@ -120,7 +120,7 @@
 // Image Upload
 .images-upload-block{
     .upload-img{
-        height: 150px;
+        height: 165px;
         background-image: url('../../images/bg-border.png');
         background-repeat: no-repeat;
         background-size: contain;
@@ -288,9 +288,31 @@
 // Body Dashboard
 .body-dashboard{
     .nav-tabs{
-        .nav-item{
-            .nav-link{
-
+        &.myTab{
+            .nav-item{
+                .nav-link{
+                    display: inline-block;
+                    padding: 10px !important;
+                    &.active, &:hover {
+                        color: $MainColor !important;
+                        background-color: #E7FFFA !important;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+        &.myTabServices{
+            .nav-item{
+                .nav-link{
+                    border: 0;
+                    border-bottom: 2px solid #ddd;
+                    color: #B2B2B2 !important;
+                    cursor: pointer;
+                    &.active, &:hover {
+                        border-bottom: 2px solid $MainColor;
+                        color: $MainColor !important;
+                    }
+                }
             }
         }
     }
@@ -302,6 +324,61 @@
             background-size: cover;
             width: 90%;
             border-radius: 20px;
+        }
+    }
+    .list-add-more{
+        ul{
+            li{
+                span{
+                    &::before{
+                        content: "";
+                        border-radius: 50%;
+                        background-color: $XMain;
+                        width: 10px;
+                        height: 10px;
+                        margin-inline-end: 5px;
+                        display: inline-block;
+                        position: relative;
+                        top: 2px;
+                    }
+                }
+                button{
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid #f00;
+                    i{
+                        font-size: 10px
+                    }
+                }
+            }
+        }
+    }
+    .show-list-subscription{
+        button{
+            width: 120px;
+        }
+    }
+}
+
+// PoP Hover
+.pop-hover{
+    p{
+        @include positionItem(absolute, initial, -10px, initial, initial, initial);
+        @include transition(0.5s);
+        font-size: 9px;
+        width: 115px;
+        background-color: #ffe8e8;
+        padding: 4px;
+        border: 1px solid #ffcece;
+        border-radius: 5px;
+        line-height: 15px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    &:hover{
+        p{
+            opacity: 1;
+            visibility: initial;
         }
     }
 }

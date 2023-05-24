@@ -17,6 +17,13 @@ html[dir=ltr] {
         transform: translateX(-100%);  
         left: 0;            
     }
+
+    // PoP Hover
+    .pop-hover{
+        p{
+            left: 20px;
+        }
+    }
     
     // Home
     .main-body-home{
@@ -89,6 +96,13 @@ html[dir=rtl] {
     .overlay-fixed{
         transform: translateX(100%);  
         right: 0;            
+    }
+
+    // PoP Hover
+    .pop-hover{
+        p{
+            right: 20px;
+        }
     }
     
     // Home

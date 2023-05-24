@@ -232,6 +232,7 @@ i {
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 10px 0;
+  line-height: 23px;
 }
 
 ul {
@@ -242,14 +243,14 @@ ul {
 
 input {
   border: 1px solid #CFCFCF;
-  padding: 11px 20px;
+  padding: 13px 20px;
   border-radius: 7px;
 }
 
 textarea {
   border: 1px solid #CFCFCF;
   padding: 13px 20px;
-  border-radius: 2px;
+  border-radius: 7px;
   min-height: 100px;
   resize: none;
 }
@@ -331,7 +332,7 @@ select {
 }
 
 .bgColorInput {
-  background-color: #CFCFCF !important;
+  background-color: #F6F6F6 !important;
 }
 
 .bgManinOverlayColor {
@@ -352,6 +353,10 @@ select {
 
 .borderColorMain {
   border: 1px solid #4ECEB6 !important;
+}
+
+.borderXMain {
+  border: 1px solid #13848B !important;
 }
 
 .borderSecondColor {
@@ -387,9 +392,9 @@ button {
 .btn-button {
   height: 40px;
   line-height: 42px;
-  width: 160px;
+  width: 180px;
   font-size: 15px;
-  border-radius: 10px;
+  border-radius: 10px !important;
 }
 .btn-button:hover {
   transform: scale(0.9);
@@ -454,7 +459,7 @@ button {
 }
 
 .height-view-scroll {
-  height: 500px;
+  height: 600px;
   overflow-y: auto;
 }
 
@@ -481,6 +486,10 @@ button {
 .icon-circle {
   width: 35px;
   height: 35px;
+}
+
+.borderRadius {
+  border-radius: 15px;
 }
 
 .img-circle {
@@ -622,7 +631,7 @@ button {
 }
 
 .images-upload-block .upload-img {
-  height: 150px;
+  height: 165px;
   background-image: url("../../images/bg-border.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -805,6 +814,25 @@ button {
   border-radius: 15px 0 0 15px;
 }
 
+.body-dashboard .nav-tabs.myTab .nav-item .nav-link {
+  display: inline-block;
+  padding: 10px !important;
+}
+.body-dashboard .nav-tabs.myTab .nav-item .nav-link.active, .body-dashboard .nav-tabs.myTab .nav-item .nav-link:hover {
+  color: #4ECEB6 !important;
+  background-color: #E7FFFA !important;
+  border-radius: 10px;
+}
+.body-dashboard .nav-tabs.myTabServices .nav-item .nav-link {
+  border: 0;
+  border-bottom: 2px solid #ddd;
+  color: #B2B2B2 !important;
+  cursor: pointer;
+}
+.body-dashboard .nav-tabs.myTabServices .nav-item .nav-link.active, .body-dashboard .nav-tabs.myTabServices .nav-item .nav-link:hover {
+  border-bottom: 2px solid #4ECEB6;
+  color: #4ECEB6 !important;
+}
 .body-dashboard .belongings .bg-con-belong {
   height: 200px;
   background-image: url("../../images/bg.png");
@@ -812,6 +840,56 @@ button {
   background-size: cover;
   width: 90%;
   border-radius: 20px;
+}
+.body-dashboard .list-add-more ul li span::before {
+  content: "";
+  border-radius: 50%;
+  background-color: #13848B;
+  width: 10px;
+  height: 10px;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.body-dashboard .list-add-more ul li button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #f00;
+}
+.body-dashboard .list-add-more ul li button i {
+  font-size: 10px;
+}
+.body-dashboard .show-list-subscription button {
+  width: 120px;
+}
+
+.pop-hover p {
+  position: absolute;
+  top: initial;
+  bottom: -10px;
+  right: initial;
+  left: initial;
+  transform: initial;
+  margin: auto;
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  font-size: 9px;
+  width: 115px;
+  background-color: #ffe8e8;
+  padding: 4px;
+  border: 1px solid #ffcece;
+  border-radius: 5px;
+  line-height: 15px;
+  opacity: 0;
+  visibility: hidden;
+}
+.pop-hover:hover p {
+  opacity: 1;
+  visibility: initial;
 }
 
 .remove-offer img {
@@ -974,6 +1052,9 @@ html[dir=ltr] .overlay-fixed {
   transform: translateX(-100%);
   left: 0;
 }
+html[dir=ltr] .pop-hover p {
+  left: 20px;
+}
 html[dir=ltr] .main-body-home .img-info-home .shame {
   left: -60px;
   transform: scale(-1.1, 1.1);
@@ -1010,6 +1091,9 @@ html[dir=rtl] .fix-icon-Input {
 html[dir=rtl] .overlay-fixed {
   transform: translateX(100%);
   right: 0;
+}
+html[dir=rtl] .pop-hover p {
+  right: 20px;
 }
 html[dir=rtl] .main-body-home .img-info-home .shame {
   right: -60px;
