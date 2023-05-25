@@ -360,6 +360,30 @@
     }
 }
 
+// Chat
+.live-chat{
+    .in-box-chat{
+        margin: 10px 0;
+        p{
+            max-width: 330px;
+            margin-top: 22px !important;
+        }
+        &.left-inbox{
+            p{
+                border-radius: 0 15px 15px 15px;
+            }
+        }
+        &.right-inbox{
+            p{
+                border-radius: 15px 0 15px 15px;
+            }
+            h6{
+                text-align: end;
+            }
+        }
+    }
+}
+
 // PoP Hover
 .pop-hover{
     p{

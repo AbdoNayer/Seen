@@ -81,7 +81,7 @@
     </header>
 
     <!-- Body Content -->
-    <div class="main-body body-dashboard py-4">
+    <div class="main-body body-dashboard py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-xs-12">
@@ -112,13 +112,13 @@
                                 </a>
                             </li>
                             <li class="nav-item my-2" role="presentation">
-                                <a href="/index.html" class="nav-link active border-0 m-0" id="massage-tab" data-bs-toggle="tab" data-bs-target="#massage" type="button" role="tab" aria-controls="massage" aria-selected="true">
+                                <a href="/index.html" class="nav-link border-0 m-0" id="massage-tab" data-bs-toggle="tab" data-bs-target="#massage" type="button" role="tab" aria-controls="massage" aria-selected="true">
                                     <i class="icon-chat fs-5"></i>
                                     <span class="mx-2">الرسائل</span>
                                 </a>
                             </li>
                             <li class="nav-item my-2" role="presentation">
-                                <a href="/index.html" class="nav-link border-0 m-0" id="user-tab" data-bs-toggle="tab" data-bs-target="#user" type="button" role="tab" aria-controls="user" aria-selected="true">
+                                <a href="/index.html" class="nav-link active border-0 m-0" id="user-tab" data-bs-toggle="tab" data-bs-target="#user" type="button" role="tab" aria-controls="user" aria-selected="true">
                                     <i class="icon-user fs-5"></i>
                                     <span class="mx-2">حسابي</span>
                                 </a>
@@ -139,9 +139,9 @@
                     </div>
                 </div>
                 <div class="col-md-9 col-xs-12">
-                    <div class="old-shadow bg-white borderRadius overflow-hidden">
+                    <div class="overflow-hidden">
                         <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">
+                            <div class="old-shadow bg-white borderRadius overflow-hidden tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">
                                 <!-- Tabs Services -->
                                 <div class="list-services">
                                     <ul id="myTabServices" role="tablist" class="myTabServices nav nav-tabs d-flex align-items-center border-0 py-3 px-5">
@@ -421,7 +421,7 @@
                                 </div>
 
                             </div>
-                            <div class="tab-pane fade" id="list-dolar" role="tabpanel" aria-labelledby="list-dolar-tab">
+                            <div class="old-shadow bg-white borderRadius overflow-hidden tab-pane fade" id="list-dolar" role="tabpanel" aria-labelledby="list-dolar-tab">
                                 <div class="list-dolar-view">
 
                                     <div class="all-list-dolar py-3 px-5">
@@ -573,7 +573,7 @@
 
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="offers" role="tabpanel" aria-labelledby="offers-tab">
+                            <div class="old-shadow bg-white borderRadius overflow-hidden tab-pane fade" id="offers" role="tabpanel" aria-labelledby="offers-tab">
                                 
                                 <div class="py-4 px-5">
                                     <h5 class="border-bottom borderMain colorMain d-inline-block pb-3">العروض</h5>
@@ -673,16 +673,246 @@
                                 </div>
 
                             </div>
-                            <div class="tab-pane fade show active" id="massage" role="tabpanel" aria-labelledby="massage-tab">
-
+                            <div class="tab-pane fade" id="massage" role="tabpanel" aria-labelledby="massage-tab">
+                                <div class="all-chat pb-4">
+                                    <div class="row">
+                                        <div class="col-md-5 col-xs-12">
+                                            <div class="height-view-scroll bg-white old-shadow borderRadius py-2">
+                                                <div class="form-search p-4">
+                                                    <form action="" class="position-relative">
+                                                        <input type="text" placeholder="بحث" class="w-100 bgBody border-0 pe-5">
+                                                        <button class="fix-icon-search"><i class="icon-search fs-5 textLabelColor"></i></button>
+                                                    </form>
+                                                </div>
+                                                <div class="list-users">
+                                                    <div class="section-chat d-flex align-items-center bgBody p-3">
+                                                        <div class="">
+                                                            <img src="./images/img.png" alt="" class="rounded-circle" width="60" height="60">
+                                                        </div>
+                                                        <div class="px-2 flex-fill">
+                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                <h6 class="m-0">شعوزه</h6>
+                                                                <span class="textLabelColor small-font-12">11:50 AM</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                <p class="m-0 text-overflow textLabelColor small-font-12">هذا النص مثال علي الكلام المكتوب في هذه</p>
+                                                                <h6 class="bg-danger text-white rounded-circle small-circle text-center small-font-12 m-0">3</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="section-chat d-flex align-items-center p-3">
+                                                        <div class="">
+                                                            <img src="./images/img.png" alt="" class="rounded-circle" width="60" height="60">
+                                                        </div>
+                                                        <div class="px-2 flex-fill">
+                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                <h6 class="m-0">شعوزه</h6>
+                                                                <span class="textLabelColor small-font-12">11:50 AM</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                <p class="m-0 text-overflow textLabelColor small-font-12">هذا النص مثال علي الكلام المكتوب في هذه</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="section-chat d-flex align-items-center p-3">
+                                                        <div class="">
+                                                            <img src="./images/img.png" alt="" class="rounded-circle" width="60" height="60">
+                                                        </div>
+                                                        <div class="px-2 flex-fill">
+                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                <h6 class="m-0">شعوزه</h6>
+                                                                <span class="textLabelColor small-font-12">11:50 AM</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                <p class="m-0 text-overflow textLabelColor small-font-12">هذا النص مثال علي الكلام المكتوب في هذه</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-xs-12">
+                                            <div class="main-body bg-white old-shadow borderRadius">
+                                                <div class="border-bottom p-3 d-flex align-items-center">
+                                                    <img src="./images/img.png" alt="" class="rounded-circle" width="50" height="50">
+                                                    <h6 class="m-0 mx-3">شعوزه</h6>
+                                                </div>
+                                                <div class="live-chat py-2 px-3">
+                                                    <div class="in-box-chat left-inbox">
+                                                        <div class="d-flex flex-row-reverse">
+                                                            <div class="">
+                                                                <img src="./images/img.png" alt="" class="rounded-circle" width="40" height="40">
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <p class="bgColorMain text-white p-3 small-font-12 m-0">هذا النص مثال علي الكلام المكتوب في هذه المنطقه ولا يمثل اي محتوي حقيقي , هذا النص مثال علي الكلام المكتوب في هذه المنطقه ولا يمثل اي محتوي حقيقي , هذا</p>
+                                                                <h6 class="textLabelColor mt-2 small-font-12">11:50 AM</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="in-box-chat right-inbox">
+                                                        <div class="d-flex">
+                                                            <div class="">
+                                                                <img src="./images/img.png" alt="" class="rounded-circle" width="40" height="40">
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <p class="bgBody p-3 small-font-12 m-0">هذا النص مثال علي الكلام المكتوب في هذه المنطقه ولا يمثل اي محتوي حقيقي , هذا النص مثال علي الكلام المكتوب في هذه المنطقه ولا يمثل اي محتوي حقيقي , هذا</p>
+                                                                <h6 class="textLabelColor mt-2 small-font-12">11:50 AM</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="in-box-chat left-inbox">
+                                                        <div class="d-flex flex-row-reverse">
+                                                            <div class="">
+                                                                <img src="./images/img.png" alt="" class="rounded-circle" width="40" height="40">
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <p class="bgColorMain text-white p-3 small-font-12 m-0">هذا النص مثال علي الكلام المكتوب في هذه المنطقه ولا يمثل اي محتوي حقيقي , هذا النص مثال علي الكلام المكتوب في هذه المنطقه ولا يمثل اي محتوي حقيقي , هذا</p>
+                                                                <h6 class="textLabelColor mt-2 small-font-12">11:50 AM</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="in-box-chat right-inbox">
+                                                        <div class="d-flex">
+                                                            <div class="">
+                                                                <img src="./images/img.png" alt="" class="rounded-circle" width="40" height="40">
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <p class="bgBody p-3 small-font-12 m-0">هذا النص مثال علي الكلام المكتوب في هذه المنطقه ولا يمثل اي محتوي حقيقي , هذا النص مثال علي الكلام المكتوب في هذه المنطقه ولا يمثل اي محتوي حقيقي , هذا</p>
+                                                                <h6 class="textLabelColor mt-2 small-font-12">11:50 AM</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="in-box-chat left-inbox">
+                                                        <div class="d-flex flex-row-reverse">
+                                                            <div class="">
+                                                                <img src="./images/img.png" alt="" class="rounded-circle" width="40" height="40">
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <p class="bgColorMain text-white p-3 small-font-12 m-0">هذا النص مثال علي الكلام المكتوب في هذه المنطقه ولا يمثل اي محتوي حقيقي , هذا النص مثال علي الكلام المكتوب في هذه المنطقه ولا يمثل اي محتوي حقيقي , هذا</p>
+                                                                <h6 class="textLabelColor mt-2 small-font-12">11:50 AM</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="in-box-chat right-inbox">
+                                                        <div class="d-flex">
+                                                            <div class="">
+                                                                <img src="./images/img.png" alt="" class="rounded-circle" width="40" height="40">
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <p class="bgBody p-3 small-font-12 m-0">هذا النص مثال علي الكلام المكتوب في هذه المنطقه ولا يمثل اي محتوي حقيقي , هذا النص مثال علي الكلام المكتوب في هذه المنطقه ولا يمثل اي محتوي حقيقي , هذا</p>
+                                                                <h6 class="textLabelColor mt-2 small-font-12">11:50 AM</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="p-3">
+                                                    <form class="form-chat d-flex align-items-center justify-content-between border borderRadius py-2 px-3">
+                                                        <input type="text" class="border-0 flex-fill p-0 input-custom-size" placeholder="اكتب الرساله هنا.." />
+                                                        <div class="d-flex align-items-center">
+                                                            <button class="mx-4"><i class="icon-add-file"></i></button>
+                                                            <button class="rounded-3 bgColorMain icon-circle"><i class="icon-sent text-white"></i></button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="tab-pane fade" id="user" role="tabpanel" aria-labelledby="user-tab">
+                            <div class="old-shadow bg-white borderRadius overflow-hidden tab-pane fade show active" id="user" role="tabpanel" aria-labelledby="user-tab">
+                                <div class="">
 
+                                    <!-- Tabs Services -->
+                                    <div class="list-services">
+                                        <ul id="myTabServices" role="tablist" class="myTabServices nav nav-tabs d-flex align-items-center border-0 py-3 px-5">
+                                            <li class="nav-item" role="presentation">
+                                                <a class="px-2 py-3 nav-link active" id="data-user-tab" data-bs-toggle="tab" data-bs-target="#data-user" type="button" role="tab" aria-controls="data-user" aria-selected="true">
+                                                    <span class="mx-2">المعلومات الشخصيه</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="px-2 py-3 nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="true">
+                                                    <span class="mx-2">بيانات التواصل</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="px-2 py-3 nav-link" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery" type="button" role="tab" aria-controls="gallery" aria-selected="true">
+                                                    <span class="mx-2">المعرض</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="px-2 py-3 nav-link" id="setting-tab" data-bs-toggle="tab" data-bs-target="#setting" type="button" role="tab" aria-controls="setting" aria-selected="true">
+                                                    <span class="mx-2">الأعدادات</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="height-view-scroll">
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="data-user" role="tabpanel" aria-labelledby="data-user-tab">
+                                                    <div class="px-5 py-2">
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-xs-12 my-3">
+                                                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                                                    <h6 class="m-0">اسم المؤسسه</h6>
+                                                                    <button class="bgEdit rounded-3 px-2 py-1 d-flex align-items-center justify-content-center">
+                                                                        <i class="icon-edit small-font-12 text-white mx-1"></i>
+                                                                        <h6 class="m-0 text-white small-font-12 mx-1">تعديل</h6>
+                                                                    </button>
+                                                                </div>
+                                                                <input placeholder="اكتب هنا" class="w-100 borderColorInput bgBody" />
+                                                            </div>
+                                                            <div class="col-md-6 col-xs-12 my-3">
+                                                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                                                    <h6 class="m-0">البريد الالكتروني</h6>
+                                                                    <button class="bgEdit rounded-3 px-2 py-1 d-flex align-items-center justify-content-center">
+                                                                        <i class="icon-edit small-font-12 text-white mx-1"></i>
+                                                                        <h6 class="m-0 text-white small-font-12 mx-1">تعديل</h6>
+                                                                    </button>
+                                                                </div>
+                                                                <input placeholder="اكتب هنا" class="w-100 borderColorInput bgBody" />
+                                                            </div>
+                                                            <div class="col-md-6 col-xs-12 my-3">
+                                                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                                                    <h6 class="m-0">رقم الهاتف</h6>
+                                                                    <button class="bgEdit rounded-3 px-2 py-1 d-flex align-items-center justify-content-center">
+                                                                        <i class="icon-edit small-font-12 text-white mx-1"></i>
+                                                                        <h6 class="m-0 text-white small-font-12 mx-1">تعديل</h6>
+                                                                    </button>
+                                                                </div>
+                                                                <input placeholder="اكتب هنا" class="w-100 borderColorInput bgBody" />
+                                                            </div>
+                                                            <div class="col-md-6 col-xs-12 my-3">
+                                                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                                                    <h6 class="m-0">الرقم السري</h6>
+                                                                    <button class="bgEdit rounded-3 px-2 py-1 d-flex align-items-center justify-content-center">
+                                                                        <i class="icon-edit small-font-12 text-white mx-1"></i>
+                                                                        <h6 class="m-0 text-white small-font-12 mx-1">تعديل</h6>
+                                                                    </button>
+                                                                </div>
+                                                                <input placeholder="اكتب هنا" class="w-100 borderColorInput bgBody" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                                    
+                                                </div>
+                                                <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+                                                    
+                                                </div>
+                                                <div class="tab-pane fade" id="setting" role="tabpanel" aria-labelledby="setting-tab">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
-                            <div class="tab-pane fade" id="belongings" role="tabpanel" aria-labelledby="belongings-tab">
-                                <div class="belongings p-4">
+                            <div class="pb-3 tab-pane fade" id="belongings" role="tabpanel" aria-labelledby="belongings-tab">
+                                <div class="belongings p-4 old-shadow bg-white borderRadius overflow-hidden">
                                     <h5 class="border-bottom borderMain colorMain d-inline-block pb-2">مستحقاتي</h5>
-                                    <div class="d-flex align-items-center justify-content-between flex-column height-view-scroll">
+                                    <div class="d-flex align-items-center justify-content-between flex-column mini-body">
                                         <div class="bg-con-belong d-flex align-items-center justify-content-center flex-column mt-4">
                                             <h4 class="text-white">قيمة المستحقات</h4>
                                             <h1 class="text-white fw-bold">3455 ريال</h1>

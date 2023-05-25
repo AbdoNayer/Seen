@@ -13,6 +13,10 @@ html[dir=ltr] {
         right: 10px;
     }
 
+    .fix-icon-search{
+        left: 17px;
+    }
+
     .overlay-fixed{
         transform: translateX(-100%);  
         left: 0;            
@@ -91,6 +95,10 @@ html[dir=rtl] {
 
     .fix-icon-Input{
         left: 10px;
+    }
+
+    .fix-icon-search{
+        right: 17px;
     }
 
     .overlay-fixed{

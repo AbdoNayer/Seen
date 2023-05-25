@@ -99,6 +99,10 @@ textarea{
     @include positionItem(absolute, 50%, initial, initial, initial, translateY(-50%));
 }
 
+.fix-icon-search{
+    @include positionItem(absolute, 50%, initial, initial, initial, translateY(-50%));
+}
+
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -169,6 +173,10 @@ select {
 
 .bgBody{
     background-color: #F2F2F2;
+}
+
+.bgEdit{
+    background-color: #FE9E9D;
 }
 
 // Border Color
@@ -260,6 +268,10 @@ button{
 }
 
 .main-body{
+    min-height: 600px;
+}
+
+.mini-body{
     min-height: 500px;
 }
 
@@ -269,6 +281,11 @@ button{
 
 .height-view-scroll{
     height: 600px;
+    overflow-y: auto;
+}
+
+.live-chat{
+    height: 430px;
     overflow-y: auto;
 }
 
@@ -299,6 +316,11 @@ button{
 .icon-circle{
     width: 35px;
     height: 35px;
+}
+
+.small-circle{
+    width: 18px;
+    height: 18px;
 }
 
 // 

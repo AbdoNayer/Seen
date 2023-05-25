@@ -98,6 +98,22 @@ $(document).ready(function () {
         }, 2000);
     });
 
+    // Start Chat ScrollDown
+    (function() {
+        $(".live-chat").animate({ scrollTop: $('.live-chat').prop("scrollHeight")}, 1000);
+        $(function () {
+            $('.form-chat').on('submit', function (event) {
+                event.preventDefault();
+                var message = $('.right-inbox').first().clone();
+                message.find('p').text($('.input-custom-size').val());
+                message.appendTo('.live-chat');
+                $('input').val('');
+                $(".live-chat").animate({ scrollTop: $('.live-chat').prop("scrollHeight")}, 1000);
+            });
+        });
+    })(jQuery);
+    
+
     // Animation Page
     AOS.init();
     

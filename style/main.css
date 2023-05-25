@@ -285,6 +285,16 @@ textarea {
   margin: auto;
 }
 
+.fix-icon-search {
+  position: absolute;
+  top: 50%;
+  bottom: initial;
+  right: initial;
+  left: initial;
+  transform: translateY(-50%);
+  margin: auto;
+}
+
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -349,6 +359,10 @@ select {
 
 .bgBody {
   background-color: #F2F2F2;
+}
+
+.bgEdit {
+  background-color: #FE9E9D;
 }
 
 .borderColorMain {
@@ -451,6 +465,10 @@ button {
 }
 
 .main-body {
+  min-height: 600px;
+}
+
+.mini-body {
   min-height: 500px;
 }
 
@@ -460,6 +478,11 @@ button {
 
 .height-view-scroll {
   height: 600px;
+  overflow-y: auto;
+}
+
+.live-chat {
+  height: 430px;
   overflow-y: auto;
 }
 
@@ -486,6 +509,11 @@ button {
 .icon-circle {
   width: 35px;
   height: 35px;
+}
+
+.small-circle {
+  width: 18px;
+  height: 18px;
 }
 
 .borderRadius {
@@ -865,6 +893,23 @@ button {
   width: 120px;
 }
 
+.live-chat .in-box-chat {
+  margin: 10px 0;
+}
+.live-chat .in-box-chat p {
+  max-width: 330px;
+  margin-top: 22px !important;
+}
+.live-chat .in-box-chat.left-inbox p {
+  border-radius: 0 15px 15px 15px;
+}
+.live-chat .in-box-chat.right-inbox p {
+  border-radius: 15px 0 15px 15px;
+}
+.live-chat .in-box-chat.right-inbox h6 {
+  text-align: end;
+}
+
 .pop-hover p {
   position: absolute;
   top: initial;
@@ -1048,6 +1093,9 @@ html[dir=ltr] body {
 html[dir=ltr] .fix-icon-Input {
   right: 10px;
 }
+html[dir=ltr] .fix-icon-search {
+  left: 17px;
+}
 html[dir=ltr] .overlay-fixed {
   transform: translateX(-100%);
   left: 0;
@@ -1087,6 +1135,9 @@ html[dir=rtl] body {
 }
 html[dir=rtl] .fix-icon-Input {
   left: 10px;
+}
+html[dir=rtl] .fix-icon-search {
+  right: 17px;
 }
 html[dir=rtl] .overlay-fixed {
   transform: translateX(100%);
