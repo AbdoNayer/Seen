@@ -18,6 +18,12 @@ $(document).ready(function () {
     $('.image-uploader').change(function (event){
         $(this).parents('.images-upload-block').find('.upload-area').append('<div class="uploaded-block"><img src="'+ URL.createObjectURL(event.target.files[0]) +'"><button class="close"><i class="icon-trash text-white"></i></button></div>');
     });
+
+
+    $('.image-uploader-in-more').change(function (event){
+        $(this).parents('.images-upload-block').find('.upload-area').append('<div class="uploaded-block"><img class="border" src="'+ URL.createObjectURL(event.target.files[0]) +'"><div class="control-img w-100 h-100 d-flex align-items-center justify-content-center"><button class="icon-circle bg-danger rounded-3 mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="icon-trash text-white"></i></button><button class="icon-circle bgColorMain rounded-3 mx-2"><i class="icon-edit text-white"></i></button></div></div>');
+    });
+    
     
     // REMOVE IMAGE
     $('.images-upload-block').on('click', '.close',function (){
@@ -59,6 +65,10 @@ $(document).ready(function () {
     $(".form-add-new-list").fadeOut("");
     $(".show-list-subscription").fadeOut("");
     $(".form-new-offer").fadeOut("");
+    $(".input-bank").fadeOut("");
+    $(".input-bank").fadeOut("");
+    $(".form-gallery").fadeOut("");
+    $(".block-subscribe").fadeOut("");
 
     // Show Subscription
     $(document).on("click", ".next-subscription",function() {
@@ -90,6 +100,43 @@ $(document).ready(function () {
         $(".form-new-offer").fadeToggle("");
     });
 
+    // Show Add New Bank
+    $(document).on("click", ".add-bank",function() {
+        $(".add-bank").fadeToggle("");
+        $(".input-bank").fadeToggle("");
+    });
+
+    // Show Add New Gallery
+    $(document).on("click", ".add-new-gallery",function() {
+        $(".list-gallery").fadeToggle("");
+        $(".form-gallery").fadeToggle("");
+    });
+
+    // Show Add New Subscribe
+    $(document).on("click", ".add-new-subscribe",function() {
+        $(".block-subscribe").fadeToggle("");
+        $(".found-subscribe").fadeToggle("");
+    });
+
+    // Show New Phone
+    $(document).on("click", ".add-phone",function() {
+        $(".list-phones").append(`
+            <div class="section-phone mb-3">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="./images/call.png" alt="" width="30" height="30">
+                    <h6 class="m-0 mx-2">أرقام الهاتف</h6>
+                </div>
+                <div class="d-flex align-items-center">
+                    <input placeholder="ادخل الرابط" class="w-100 borderColorInput bgBody" />
+                    <label class="switch position-relative d-inline-block me-3">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        `);
+    });
+
     // Done Subscription And Push To Home
     $(document).on("click", ".done-add-subscription",function() {
         setTimeout(function() {
@@ -113,6 +160,11 @@ $(document).ready(function () {
         });
     })(jQuery);
     
+
+    // Select Menu Drop Down
+    $(document).on("click", ".on-click-head-menu",function() {
+        $(this).parent('.dropdown').toggleClass('open').siblings().removeClass('open');
+    });
 
     // Animation Page
     AOS.init();

@@ -71,6 +71,54 @@
     }
 }
 
+// Style RadioBox
+.radio-box {
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: auto;
+        &:checked {
+            ~ .checkmark {
+                border: 1px solid $MainColor;
+                background-color: $MainColor;
+            }
+            ~ .checkmark:after {
+                display: block;
+            }
+        }
+    }
+    .checkmark {
+        border: 1px solid #ddd;
+        position: relative;
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        background-color: transparent;
+        border-radius: 5px;
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 8px;
+            top: 3px;
+            width: 8px;
+            height: 14px;
+            border: solid $White;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+}
+
 // Style Click Nav
 .click-nav {
     display: none;
@@ -151,6 +199,7 @@
             width: 100%;
             height: 100%;
             z-index: 9;
+            font-size: 30px;
         }
     }
 }
@@ -413,3 +462,138 @@
     }
 }
 
+// Plus Gallery
+.plus-gallery{
+    .images-upload-block{
+        .upload-img{
+            background-image: url('../../images/boder.png');
+            width: 140px;
+            height: 140px;
+        }
+        .uploaded-block{
+            width: 140px;
+            height: 140px;
+            .control-img{
+                @include positionItem(absolute, 0, initial, 0, initial, initial);
+                @include transition(0.5s);
+                background-color: $BgDarkOverlayColor;
+                opacity: 0;
+                visibility: hidden;
+                z-index: 9;
+            }
+            &:hover{
+                .control-img{
+                    opacity: 1;
+                    visibility: initial;
+                }
+            }
+        }
+    }
+}
+
+// Switch
+.switch {
+    width: 75px;
+    height: 30px;
+    input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        @include positionItem(absolute, 0, 0, 0, 0, initial);
+        @include transition(0.5s);
+        background-color: #ccc;
+        cursor: pointer;
+        &.round:before {
+            border-radius: 50%;
+        }
+        &.round {
+            border-radius: 34px;
+        }
+        &:before {
+            content: "";
+            @include positionItem(absolute, 3px, initial, initial, 6px, initial);
+            @include transition(0.5s);
+            height: 23px;
+            width: 23px;
+            background-color: $White;
+        }
+    }
+}
+  
+input:checked + .slider {
+    background-color: $MainColor;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px $MainColor;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+// Box Gallery Img
+
+.box-gallery-img{
+    .over-control{
+        @include positionItem(absolute, 0, initial, 0, initial, initial);
+        @include transition(0.5s);
+        background-color: $BgDarkOverlayColor;
+        z-index: 9;
+    }
+}
+
+.sc-gallery{
+    .images-upload-block{
+        width: 150px;
+        height: 150px;
+        .upload-img{
+            background-image: url('../../images/boder.png');
+            width: 100%;
+            height: 100%;
+        }
+        .upload-area{
+            .uploaded-block{
+                @include positionItem(absolute, 0, initial, 0, initial, initial);
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+// Drop Menu
+.in-select-menu{
+    .dropdown {
+        .on-click-head-menu{
+            border-radius: 15px 15px 0px 0px;
+            cursor: pointer
+        }
+        .dropdown-list {
+            @include positionItem(absolute, 63px, initial, 0, 0, initial);
+            @include transition(0.5s);
+            max-height: 223px;
+            overflow-y: auto;
+            background: $White;
+            z-index: 10;
+            opacity: 0;
+            visibility: hidden;
+        }
+        &.open {
+          .icon-down{
+            transform: rotate(-180deg);
+          }
+          .dropdown-list{
+            opacity: 1;
+            visibility: initial;
+          }
+        }
+      }
+}
+  
+  
+  
