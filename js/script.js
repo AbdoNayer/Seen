@@ -69,6 +69,7 @@ $(document).ready(function () {
     $(".input-bank").fadeOut("");
     $(".form-gallery").fadeOut("");
     $(".block-subscribe").fadeOut("");
+    $(".none-section").fadeOut("");
 
     // Show Subscription
     $(document).on("click", ".next-subscription",function() {

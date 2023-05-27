@@ -567,32 +567,38 @@ input:checked + .slider:before {
 }
 
 // Drop Menu
-.in-select-menu{
-    .dropdown {
-        .on-click-head-menu{
-            border-radius: 15px 15px 0px 0px;
-            cursor: pointer
+.dropdown {
+    .on-click-head-menu{
+        border-radius: 10px 10px 0px 0px;
+        padding: 10px 15px;
+        cursor: pointer;
+        .icon-circle{
+            width: 25px;
+            height: 25px;
+            i{
+                font-size: 8px
+            }
         }
-        .dropdown-list {
-            @include positionItem(absolute, 63px, initial, 0, 0, initial);
-            @include transition(0.5s);
-            max-height: 223px;
-            overflow-y: auto;
-            background: $White;
-            z-index: 10;
-            opacity: 0;
-            visibility: hidden;
-        }
-        &.open {
-          .icon-down{
-            transform: rotate(-180deg);
-          }
-          .dropdown-list{
-            opacity: 1;
-            visibility: initial;
-          }
-        }
+    }
+    .dropdown-list {
+        @include positionItem(absolute, 58px, initial, 0, 0, initial);
+        @include transition(0.5s);
+        max-height: 223px;
+        overflow-y: auto;
+        background: $White;
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+    }
+    &.open {
+      .icon-down{
+        transform: rotate(-180deg);
       }
+      .dropdown-list{
+        opacity: 1;
+        visibility: initial;
+      }
+    }
 }
   
   

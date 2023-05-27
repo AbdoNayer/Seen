@@ -259,10 +259,33 @@
                                                 <h6 class="m-0">الفئة</h6>
                                                 <span class="text-danger fs-2 mt-2 mx-2">*</span>
                                             </div>
-                                            <input placeholder="اكتب الرقم هنا" class="w-100 borderColorInput bgBody" />
+                                            <div class="dropdown position-relative mb-3">
+                                                <div class="on-click-head-menu d-flex align-items-center justify-content-between old-shadow">
+                                                    <label class="dropdown-label">اختار من هنا</label>
+                                                    <button class="bgColorMainOp icon-circle rounded-3 d-flex align-items-center justify-content-center">
+                                                        <i class="icon-down colorMain"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="dropdown-list old-shadow">
+                                                    <div class="on-click-item d-flex align-items-center justify-content-between border-bottom p-3">
+                                                        <h6 class="m-0">مدارس</h6>
+                                                        <label class="radio-box" onclick="setValue('مدارس')">
+                                                            <input type="radio" name="radio">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="on-click-item d-flex align-items-center justify-content-between border-bottom p-3">
+                                                        <h6 class="m-0">مجتمعات</h6>
+                                                        <label class="radio-box" onclick="setValue('مجتمعات')">
+                                                            <input type="radio" name="radio">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-xs-12">
+                                    <div class="none-section col-md-6 col-xs-12">
                                         <div class="mb-3">
                                             <div class="d-flex align-items-center">
                                                 <h6 class="m-0">عدد الفصول</h6>
@@ -271,7 +294,7 @@
                                             <input placeholder="اكتب الرقم هنا" class="w-100 borderColorInput bgBody" />
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-xs-12">
+                                    <div class="none-section col-md-6 col-xs-12">
                                         <div class="mb-3">
                                             <div class="d-flex align-items-center">
                                                 <h6 class="m-0">سعة الفصل</h6>
@@ -280,16 +303,39 @@
                                             <input placeholder="اكتب الرقم هنا" class="w-100 borderColorInput bgBody" />
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-xs-12">
+                                    <div class="none-section col-md-6 col-xs-12">
                                         <div class="mb-3">
                                             <div class="d-flex align-items-center">
                                                 <h6 class="m-0">الجنس المقدم له الخدمة</h6>
                                                 <span class="text-danger fs-2 mt-2 mx-2">*</span>
                                             </div>
-                                            <input placeholder="اكتب الرقم هنا" class="w-100 borderColorInput bgBody" />
+                                            <div class="dropdown position-relative mb-3">
+                                                <div class="on-click-head-menu d-flex align-items-center justify-content-between old-shadow">
+                                                    <label class="dropdown-label">اختار من هنا</label>
+                                                    <button class="bgColorMainOp icon-circle rounded-3 d-flex align-items-center justify-content-center">
+                                                        <i class="icon-down colorMain"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="dropdown-list old-shadow">
+                                                    <div class="on-click-item d-flex align-items-center justify-content-between border-bottom p-3">
+                                                        <h6 class="m-0">مدارس</h6>
+                                                        <label class="radio-box">
+                                                            <input type="radio" name="radio">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="on-click-item d-flex align-items-center justify-content-between border-bottom p-3">
+                                                        <h6 class="m-0">مجتمعات</h6>
+                                                        <label class="radio-box">
+                                                            <input type="radio" name="radio">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="none-section col-md-6 col-xs-12">
                                         <div class="">
                                             <div class="d-flex align-items-center">
                                                 <h6 class="m-0">المستندات المطلوبة</h6>
@@ -401,6 +447,22 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Plugin Text Animation -->
     <script src="./js/script.js"></script>
+
+    <script>
+
+        const setValue = (value) => {
+
+            let nonesection     = document.querySelector(".none-section");
+            let div             = document.querySelector(".dropdown");
+            let span            = div.querySelector(".dropdown-label");
+            span.innerHTML      = value;
+
+            div.classList.remove("open");
+            $(".none-section").fadeIn("");
+
+        }
+
+    </script>
 
 </body>
 </html>

@@ -1209,68 +1209,34 @@
                                                 </div>
                                                 <div class="tab-pane fade show active" id="setting" role="tabpanel" aria-labelledby="setting-tab">
                                                     <div class="px-5 py-2">
-
-                                                        <div class="in-select-menu">
-                                                            <div class="dropdown position-relative mb-3">
-                                                                <div class="on-click-head-menu d-flex align-items-center justify-content-between old-shadow p-3">
-                                                                    <label class="dropdown-label">العربيه</label>
-                                                                    <button class="bgColorMainOp icon-circle rounded-3">
-                                                                        <i class="icon-down colorMain small-font-12"></i>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="dropdown-list old-shadow">
-                                                                    <div class="on-click-item d-flex align-items-center justify-content-between border-bottom p-3">
-                                                                        <h6 class="m-0">مدارس</h6>
-                                                                        <label class="radio-box" onclick="setValue('مدارس')">
-                                                                            <input type="radio" name="radio">
-                                                                            <span class="checkmark"></span>
-                                                                        </label>
+                                                            
+                                                        <div>
+                                                            <div class="row align-items-center justify-content-between">
+                                                                <div class="col-md-4 col-xs-12 p-0 dropdown position-relative mb-3">
+                                                                    <div class="on-click-head-menu d-flex align-items-center justify-content-between old-shadow p-3">
+                                                                        <label class="dropdown-label">العربيه</label>
+                                                                        <button class="bgColorMainOp icon-circle rounded-3 d-flex align-items-center justify-content-center">
+                                                                            <i class="icon-down colorMain"></i>
+                                                                        </button>
                                                                     </div>
-                                                                    <div class="on-click-item d-flex align-items-center justify-content-between border-bottom p-3">
-                                                                        <h6 class="m-0">مجتمعات</h6>
-                                                                        <label class="radio-box" onclick="setValue('مجتمعات')">
-                                                                            <input type="radio" name="radio">
-                                                                            <span class="checkmark"></span>
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dropdown position-relative mb-3">
-                                                                <div class="on-click-head-menu d-flex align-items-center justify-content-between old-shadow p-3">
-                                                                    <label class="dropdown-label">العربيه</label>
-                                                                    <button class="bgColorMainOp icon-circle rounded-3">
-                                                                        <i class="icon-down colorMain small-font-12"></i>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="dropdown-list old-shadow">
-                                                                    <div class="on-click-item d-flex align-items-center justify-content-between border-bottom p-3">
-                                                                        <h6 class="m-0">مدارس</h6>
-                                                                        <label class="radio-box" onclick="setValue('مدارس')">
-                                                                            <input type="radio" name="radio">
-                                                                            <span class="checkmark"></span>
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="on-click-item d-flex align-items-center justify-content-between border-bottom p-3">
-                                                                        <h6 class="m-0">مجتمعات</h6>
-                                                                        <label class="radio-box" onclick="setValue('مجتمعات')">
-                                                                            <input type="radio" name="radio">
-                                                                            <span class="checkmark"></span>
-                                                                        </label>
+                                                                    <div class="dropdown-list old-shadow">
+                                                                        <div class="on-click-item d-flex align-items-center justify-content-between border-bottom p-3">
+                                                                            <h6 class="m-0">مدارس</h6>
+                                                                            <label class="radio-box" onclick="setValue('مدارس')">
+                                                                                <input type="radio" name="radio">
+                                                                                <span class="checkmark"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="on-click-item d-flex align-items-center justify-content-between border-bottom p-3">
+                                                                            <h6 class="m-0">مجتمعات</h6>
+                                                                            <label class="radio-box" onclick="setValue('مجتمعات')">
+                                                                                <input type="radio" name="radio">
+                                                                                <span class="checkmark"></span>
+                                                                            </label>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="w-75">
-                                                            <div class="d-flex align-items-center justify-content-between">
-                                                                <div class="">
-                                                                    <h6 class="m-0 mb-3">اللغه</h6>
-                                                                    <select class="bg-white old-shadow rounded-3 py-3 px-3">
-                                                                        <option value="">العربيه</option>
-                                                                        <option value="">English</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="text-center">
+                                                                <div class="col-md-8 col-xs-12 text-center mb-3">
                                                                     <h6 class="m-0 mb-3">المود الداكن</h6>
                                                                     <label class="switch position-relative d-inline-block">
                                                                         <input type="checkbox">
@@ -1449,7 +1415,10 @@
     <script src="./js/script.js"></script>
 
     <script>
+
         function setValue(value) {
+
+            console.log('val', value)
 
             let div             = document.querySelector(".dropdown");
             let span            = div.querySelector(".dropdown-label");
@@ -1458,6 +1427,7 @@
             div.classList.remove("open");
 
         }
+
     </script>
 
 </body>
