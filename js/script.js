@@ -53,6 +53,11 @@ $(document).ready(function () {
         $("body").removeClass("overflow-hidden");
     });
 
+    // Click Open Site Tabs In Mobile
+    $(document).on("click", ".btn-fade-Tabs",function() {
+        $(".site-tab").toggleClass("back");
+    });
+
     // Upload Files
     $('#file-upload').change(function() {
         var i = $(this).prev('label').clone();

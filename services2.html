@@ -85,16 +85,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-xs-12">
-                    <div class="old-shadow bg-white rounded-3">
-                        <ul id="myTab" role="tablist" class="nav nav-tabs p-3 d-flex flex-column height-view-scroll">
-                            <li class="nav-item" role="presentation">
+                    <div class="site-tab old-shadow bg-white rounded-3">
+                        <ul id="myTab" role="tablist" class="border-0 nav nav-tabs p-3 d-flex flex-column height-view-scroll">
+                            <li class="btn-fade-Tabs nav-item" role="presentation">
                                 <a href="/index.html" class="px-2 py-3">
                                     <i class="icon-home fs-5"></i>
                                     <span class="mx-2">الرئيسيه</span>
                                 </a>
                             </li>
                             <li data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <a class="px-2 py-3 nav-link border-0 d-flex align-items-center">
+                                <a class="btn-fade-Tabs px-2 py-3 nav-link border-0 d-flex align-items-center">
                                     <i class="icon-list fs-5"></i>
                                     <span class="mx-2">الخدمات</span>
                                     <div class="pop-hover position-relative">
@@ -104,7 +104,7 @@
                                 </a>
                             </li>
                             <li data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <a class="px-2 py-3 nav-link border-0 d-flex align-items-center">
+                                <a class="btn-fade-Tabs px-2 py-3 nav-link border-0 d-flex align-items-center">
                                     <i class="icon-dolar fs-5"></i>
                                     <span class="mx-2">قوائم الاسعار</span>
                                     <div class="pop-hover position-relative">
@@ -114,7 +114,7 @@
                                 </a>
                             </li>
                             <li data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <a class="px-2 py-3 nav-link border-0 d-flex align-items-center">
+                                <a class="btn-fade-Tabs px-2 py-3 nav-link border-0 d-flex align-items-center">
                                     <i class="icon-vote fs-5"></i>
                                     <span class="mx-2">العروض</span>
                                     <div class="pop-hover position-relative">
@@ -124,7 +124,7 @@
                                 </a>
                             </li>
                             <li data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <a class="px-2 py-3 nav-link border-0 d-flex align-items-center">
+                                <a class="btn-fade-Tabs px-2 py-3 nav-link border-0 d-flex align-items-center">
                                     <i class="icon-chat fs-5"></i>
                                     <span class="mx-2">الرسائل</span>
                                     <div class="pop-hover position-relative">
@@ -134,7 +134,7 @@
                                 </a>
                             </li>
                             <li data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <a class="px-2 py-3 nav-link border-0 d-flex align-items-center">
+                                <a class="btn-fade-Tabs px-2 py-3 nav-link border-0 d-flex align-items-center">
                                     <i class="icon-user fs-5"></i>
                                     <span class="mx-2">حسابي</span>
                                     <div class="pop-hover position-relative">
@@ -144,7 +144,7 @@
                                 </a>
                             </li>
                             <li data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <a class="px-2 py-3 nav-link border-0 d-flex align-items-center">
+                                <a class="btn-fade-Tabs px-2 py-3 nav-link border-0 d-flex align-items-center">
                                     <i class="icon-coins fs-5"></i>
                                     <span class="mx-2">مستحقاتي</span>
                                     <div class="pop-hover position-relative">
@@ -248,7 +248,7 @@
                                                         <i class="icon-add-video fs-1 colorMain"></i>
                                                         <strong class="colorMain my-3">اضف مقطع فيديو</strong>
                                                     </label>
-                                                    <div class="upload-area d-flex align-items-center justify-content-center mt-3"></div>
+                                                    <div class="upload-area d-flex align-items-center justify-content-center mt-3 flex-wrap"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -438,6 +438,10 @@
             </div>
         </div>
     </div>
+
+    <button class="btn-fade-Tabs d-none rounded-circle img-circle bgColorMain align-items-center justify-content-center m-3 position-fixed bottom-0 start-0">
+        <i class="icon-plus text-white fs-5"></i>
+    </button>
 
     <!-- Plugin Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

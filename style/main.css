@@ -232,7 +232,6 @@ i {
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 10px 0;
-  line-height: 23px;
 }
 
 ul {
@@ -1171,8 +1170,23 @@ input:checked + .slider:before {
   .ps-5 {
     padding-left: 0 !important;
   }
+  .px-5 {
+    padding: 0 10px !important;
+  }
   .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
     width: 100% !important;
+  }
+  .column-mobile {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .column-mobile .ps-3 {
+    padding: 0 !important;
+  }
+  iframe {
+    width: 100%;
   }
   .nav-header {
     position: fixed;
@@ -1297,6 +1311,47 @@ input:checked + .slider:before {
   .main-body-auth.in-auth-mini .auth-form {
     justify-content: center;
   }
+  .site-tab {
+    position: fixed;
+    top: 125px;
+    bottom: initial;
+    right: initial;
+    left: initial;
+    transform: initial;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    z-index: 9;
+  }
+  .btn-fade-Tabs {
+    display: flex !important;
+  }
+  .inf-offer {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0;
+  }
+  #myTabServices {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 !important;
+    font-size: 14px;
+    margin: 15px 0;
+    white-space: nowrap;
+  }
+  .images-upload-block .upload-img {
+    background-position: center;
+  }
+  #add-my-services .images-upload-block .upload-img {
+    height: 70px;
+  }
+}
+@media (max-width: 1200px) {
+  header .last-control a {
+    margin: 0 5px;
+  }
 }
 html[dir=ltr] body {
   direction: ltr;
@@ -1336,6 +1391,10 @@ html[dir=ltr] .main-body-auth .auth-form .form-validation form .input-form .inpu
 }
 @media (max-width: 990px) {
   html[dir=ltr] .nav-header {
+    transform: translateX(-100%);
+    left: 0;
+  }
+  html[dir=ltr] .site-tab {
     transform: translateX(-100%);
     left: 0;
   }
@@ -1381,6 +1440,10 @@ html[dir=rtl] .dropdown-menu {
 }
 @media (max-width: 990px) {
   html[dir=rtl] .nav-header {
+    transform: translateX(100%);
+    right: 0;
+  }
+  html[dir=rtl] .site-tab {
     transform: translateX(100%);
     right: 0;
   }

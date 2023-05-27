@@ -80,6 +80,11 @@ html[dir=ltr] {
             transform: translateX(-100%);  
             left: 0;
         }
+        // Site Tab
+        .site-tab{
+            transform: translateX(-100%);  
+            left: 0;
+        }
     }
 
 }
@@ -167,6 +172,11 @@ html[dir=rtl] {
         .nav-header{
             transform: translateX(100%);  
             right: 0; 
+        }
+        // Site Tab
+        .site-tab{
+            transform: translateX(100%); 
+            right: 0;
         }
     }
 
